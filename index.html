@@ -1,1489 +1,825 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>C-Lash by Codilia | Gentle False Lashes for Sensitive Eyes & Medical Hair Loss</title>
-  <meta name="description" content="Discover C-Lash by Codilia, co-created with Eylure London. The world's first gentle, silicone-band false eyelashes designed specifically for eyelash loss from chemotherapy, alopecia, or sensitive skin.">
-  <meta name="keywords" content="C-Lash, Codilia Gapare, Eylure London, chemotherapy lashes, alopecia false lashes, sensitive eyelid lashes, gentle false eyelashes, silicone band lashes">
-  
-  <!-- Open Graph / Meta -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="C-Lash by Codilia | Restoring More Than Lashes — Restoring You">
-  <meta property="og:description" content="Patented gentle silicone-band false eyelashes co-created with Eylure London for sensitive eyes and medical lash loss.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80">
-  
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="styles.css">
-  
-  <!-- Schema.org Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org/",
-    "@type": "Product",
-    "name": "C-Lash by Codilia (Eylure London Partnership)",
-    "image": [
-      "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80"
-    ],
-    "description": "Patented gentle silicone-band false eyelashes designed for individuals experiencing lash loss due to chemotherapy, alopecia, or natural thinning.",
-    "brand": {
-      "@type": "Brand",
-      "name": "C-Lash by Codilia"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "4.9",
-      "reviewCount": "1420"
-    },
-    "offers": {
-      "@type": "AggregateOffer",
-      "priceCurrency": "GBP",
-      "lowPrice": "5.25",
-      "highPrice": "14.45",
-      "offerCount": "6"
-    }
-  }
-  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="C-Lash by Codilia in partnership with Eylure London. Patented gentle false eyelashes with flexible, skin-safe self-adhesive bands designed specifically for eyelash loss due to chemotherapy, alopecia, or sensitive skin." />
+  <meta name="theme-color" content="#4EA596" />
+  <title>C-Lash by Codilia &times; Eylure London | Gentle Lashes for Lash Loss</title>
+
+  <!-- Google Fonts: Cormorant Garamond, Alex Brush (delicate cursive for 'by Codilia'), Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- Top Announcement Bar -->
-  <!-- <aside class="announcement-bar" aria-label="Store Announcement">
-    <div class="container announcement-content">
-      <div class="announcement-badge">
-        <span class="badge-dot"></span>
-        <span class="announcement-highlight">Sunday Times Style Award Winner</span>
+  <!-- Top Ticker / Notification Bar -->
+  <aside class="top-ticker" aria-label="Announcements & Social Links">
+    <div class="ticker-inner">
+      <div class="ticker-left">
+        <span class="ticker-badge">Award Winner</span>
+        <span class="ticker-text">Sunday Times Style &amp; Allure Best of Beauty Winner &bull; Free UK Shipping over &pound;25</span>
       </div>
-      <p class="announcement-text">
-        As Seen on BBC &bull; Free UK Delivery on orders over <span class="free-shipping-threshold">£25</span> &bull; 
-        <span class="announcement-sub">Co-created with Eylure London</span>
-      </p>
-      <div class="announcement-controls">
-        <div class="currency-selector" title="Change currency">
-          <label for="currency-select" class="sr-only">Choose Currency</label>
-          <select id="currency-select" aria-label="Select currency">
-            <option value="GBP" selected>GBP (£)</option>
-            <option value="USD">USD ($)</option>
-            <option value="EUR">EUR (€)</option>
-          </select>
-        </div>
-        <div class="announcement-links">
-          <a href="#story" class="announcement-link">Our Heritage</a>
-          <a href="#medical-advice" class="announcement-link">Oncology Care</a>
-        </div>
-      </div>
-    </div>
-  </aside> -->
-
-  <!-- Sticky Main Header & Navigation -->
-  <header class="site-header" id="header">
-    <div class="container header-container">
-      <!-- Mobile Menu Toggle Button -->
-      <button class="mobile-toggle" id="mobile-toggle" aria-label="Open mobile navigation menu" aria-expanded="false" aria-controls="main-nav">
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
-        <span class="hamburger-bar"></span>
-      </button>
-
-      <!-- Brand Logo -->
-      <a href="#" class="brand-logo" aria-label="C-Lash by Codilia Home">
-        <span class="logo-mark">
-          <svg viewBox="0 0 36 24" fill="none" class="lash-svg" aria-hidden="true">
-            <path d="M2 18C8 11 18 8 34 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            <path d="M6 16C7 11 9 7 12 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M12 14C14 9 17 5 21 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M18 12C21 8 25 5 29 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-            <path d="M24 10C27 7 30 5 33 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-          </svg>
-        </span>
-        <div class="logo-text-group">
-          <span class="logo-title">C-LASH</span>
-          <span class="logo-subtitle">BY CODILIA &times; EYLURE LONDON</span>
-        </div>
-      </a>
-
-      <!-- Desktop Navigation Links -->
-      <nav class="main-nav" id="main-nav" aria-label="Main Navigation">
-        <div class="mobile-nav-header">
-          <span class="mobile-nav-title">Menu &amp; Care Guides</span>
-          <button class="mobile-nav-close" id="mobile-nav-close" aria-label="Close menu">&times;</button>
-        </div>
-
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#collection" class="nav-link">Shop Collection</a></li>
-          <li class="nav-item"><a href="#transformation" class="nav-link">Before &amp; After</a></li>
-          <li class="nav-item"><a href="#innovation" class="nav-link">The Innovation</a></li>
-          <li class="nav-item"><a href="#how-it-works" class="nav-link">How It Works</a></li>
-          <li class="nav-item"><a href="#story" class="nav-link">Codilia's Story</a></li>
-          <li class="nav-item"><a href="#reviews" class="nav-link">Patient Reviews</a></li>
-          <li class="nav-item"><a href="#community" class="nav-link">Community Reels</a></li>
-          <li class="nav-item"><a href="#faq" class="nav-link">Medical &amp; FAQ</a></li>
-        </ul>
-
-        <div class="mobile-nav-extras">
-          <button class="btn btn-secondary mobile-quiz-btn" id="mobile-quiz-trigger">
-            <span>✦ Lash Matchmaker Quiz (30s)</span>
-          </button>
-          
-          <div class="mobile-currency-group">
-            <span class="mobile-currency-label">Currency:</span>
-            <div class="currency-selector">
-              <select id="mobile-currency-select" aria-label="Select currency">
-                <option value="GBP" selected>GBP (£)</option>
-                <option value="USD">USD ($)</option>
-                <option value="EUR">EUR (€)</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="mobile-nav-trust">
-            <span>Dermatologically Approved &bull; NHS Charity Partners</span>
-          </div>
-        </div>
-      </nav>
-
-      <!-- Right Action Utilities -->
-      <div class="header-actions">
-        <button class="action-btn search-trigger" id="search-trigger" aria-label="Search lash styles" title="Search">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="action-icon">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-        </button>
-
-        <button class="action-btn wishlist-trigger" id="wishlist-trigger" aria-label="Saved lashes wishlist" title="Wishlist">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="action-icon">
-            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-          </svg>
-          <span class="action-badge wishlist-count" id="wishlist-count">0</span>
-        </button>
-
-        <button class="action-btn cart-trigger" id="cart-trigger" aria-label="View shopping bag" title="Shopping Bag">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="action-icon">
-            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <path d="M16 10a4 4 0 0 1-8 0"></path>
-          </svg>
-          <span class="action-badge cart-count" id="cart-count">0</span>
-        </button>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <!-- Hero Section (Split Layout) -->
-    <section class="hero-section" aria-labelledby="hero-title">
-      <div class="hero-decor-orb hero-decor-1" aria-hidden="true"></div>
-      <div class="hero-decor-orb hero-decor-2" aria-hidden="true"></div>
-
-      <div class="container hero-grid">
-        <!-- Left Column: Emotional Narrative & CTAs -->
-        <div class="hero-content">
-          <div class="hero-pill-badge">
-            <span class="pill-sparkle">✦</span>
-            <span>Patented Medical-Grade Silicone Innovation</span>
-          </div>
-
-          <h1 id="hero-title" class="hero-headline">
-            Restoring More Than Lashes — <br>
-            <span class="hero-headline-italic">Restoring You.</span>
-          </h1>
-
-          <p class="hero-description">
-            The world’s first gentle false eyelash engineered specifically for individuals experiencing hair loss from chemotherapy, alopecia, or sensitive skin. Designed by breast cancer survivor Codilia Gapare in collaboration with Eylure London, our patented flexible silicone strip adheres securely to bare eyelids without pulling, irritation, or needing existing lashes.
-          </p>
-
-          <div class="hero-cta-group">
-            <a href="#collection" class="btn btn-primary">
-              <span>Shop the Collection</span>
-              <svg viewBox="0 0 20 20" fill="currentColor" class="btn-arrow" aria-hidden="true">
-                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-              </svg>
-            </a>
-
-            <button class="btn btn-accent quiz-open-trigger" id="hero-quiz-trigger" aria-label="Take the 30 second lash matchmaker quiz">
-              <span class="sparkle-icon">✦</span>
-              <span>Find My Lash (30s Quiz)</span>
-            </button>
-
-            <button class="btn btn-secondary video-play-trigger" data-video-src="founder" aria-label="Watch Codilia's Story video">
-              <span class="btn-play-circle">
-                <svg viewBox="0 0 24 24" fill="currentColor" class="play-icon" aria-hidden="true">
-                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                </svg>
-              </span>
-              <span>Watch Codilia's Story</span>
-            </button>
-          </div>
-
-          <!-- Micro-Trust Points -->
-          <div class="hero-key-points">
-            <div class="key-point-item">
-              <span class="key-point-icon">
-                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-              </span>
-              <span>No natural lashes needed</span>
-            </div>
-            <div class="key-point-item">
-              <span class="key-point-icon">
-                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-              </span>
-              <span>Hypoallergenic &amp; Latex-free glue</span>
-            </div>
-            <div class="key-point-item">
-              <span class="key-point-icon">
-                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
-              </span>
-              <span>Reusable up to 10 wears</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Right Column: Visual Showcase Card -->
-        <div class="hero-visual">
-          <div class="hero-image-card">
-            <div class="hero-image-wrapper">
-              <img 
-                src="images/clash-naturals.jpg" 
-                alt="Eylure C-Lash Naturals packaging by Codilia Gapare with Allure Best of Beauty Award winner seal"
-                class="hero-main-img"
-                id="hero-dynamic-img"
-                loading="eager"
-              />
-              <div class="hero-overlay-gradient"></div>
-
-              <!-- Interactive Lash Switcher Bar inside Hero -->
-              <div class="hero-style-switcher" aria-label="Quick lash preview switcher">
-                <button class="hero-switch-btn active" data-style="naturale">✦ Naturals</button>
-                <button class="hero-switch-btn" data-style="lengthening">Lengthening</button>
-                <button class="hero-switch-btn" data-style="volume">Volume</button>
-              </div>
-            </div>
-
-            <!-- Floating Trust Badge 1 (Top Right) -->
-            <div class="floating-badge badge-top-right">
-              <div class="badge-icon-box sage">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="badge-icon" aria-hidden="true">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                </svg>
-              </div>
-              <div class="badge-text-box">
-                <span class="badge-heading">Dermatologically Tested</span>
-                <span class="badge-sub">Ultra-Sensitive Eyelid Safe</span>
-              </div>
-            </div>
-
-            <!-- Floating Product Detail Card (Bottom Left) -->
-            <div class="floating-badge badge-bottom-left">
-              <div class="hero-mini-product">
-                <div class="mini-stars" aria-label="Rated 4.9 out of 5 stars">
-                  ★★★★★
-                </div>
-                <div class="mini-title">C-Lash Naturale No. 101</div>
-                <div class="mini-quote">"I cried when I looked in the mirror. My face felt complete again."</div>
-                <div class="mini-author">— Rachel K., Oncology Patient</div>
-              </div>
-            </div>
-
-            <!-- Innovation Tag (Bottom Right) -->
-            <div class="hero-tech-tag">
-              <span class="tech-tag-dot"></span>
-              <span>Patented Flexible Curved Skin-Band</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Trust Bar (As Seen In / Awards) -->
-      <div class="trust-bar" aria-label="Media and Press Features">
-        <div class="container trust-container">
-          <p class="trust-title">Recognised &amp; Celebrated By Leading Beauty &amp; Health Media</p>
-          <div class="press-logos">
-            <div class="press-item" title="BBC News Feature">
-              <span class="press-logo bbc">BBC NEWS</span>
-            </div>
-            <div class="press-item" title="The Sunday Times Style">
-              <span class="press-logo sunday-times">THE SUNDAY TIMES <em>STYLE</em></span>
-            </div>
-            <div class="press-item" title="Metro UK">
-              <span class="press-logo metro">METRO</span>
-            </div>
-            <div class="press-item" title="Prima Magazine">
-              <span class="press-logo prima">PRIMA</span>
-            </div>
-            <div class="press-item" title="HuffPost UK">
-              <span class="press-logo huffpost">HUFFPOST</span>
-            </div>
-            <div class="press-item" title="ITV This Morning">
-              <span class="press-logo itv">ITV THIS MORNING</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- The Innovation / "Why C-Lash?" Section -->
-    <section class="section innovation-section" id="innovation" aria-labelledby="innovation-title">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-tag">ENGINEERED WITH COMPASSION</span>
-          <h2 id="innovation-title" class="section-title">The Problem With Traditional Lashes — And How We Fixed It</h2>
-          <p class="section-subtitle">
-            Most false eyelashes are designed to sit directly on existing natural hairs using thick black bands and aggressive latex adhesives. When you have no lashes, standard false strips flip, irritate vulnerable skin, or peel away within minutes.
-          </p>
-        </div>
-
-        <!-- 3 Feature Highlights Grid -->
-        <div class="features-grid">
-          <div class="feature-card">
-            <div class="feature-icon-wrapper">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="feature-icon" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"></circle>
-                <path d="M12 6v6l4 2"></path>
-              </svg>
-              <span class="feature-number">01</span>
-            </div>
-            <h3 class="feature-title">Self-Stabilising Silicone Band</h3>
-            <p class="feature-text">
-              Our patented, ultra-thin, flexible silicone band has an extended flat surface area. It rests comfortably against the delicate skin of the eyelid without requiring a natural lash shelf for support.
-            </p>
-            <ul class="feature-list">
-              <li>No natural hairs required</li>
-              <li>Wider contact surface prevents rotating</li>
-              <li>Clear, invisible look on all skin tones</li>
-            </ul>
-          </div>
-
-          <div class="feature-card highlighted-feature">
-            <div class="feature-badge">PATENTED BREAKTHROUGH</div>
-            <div class="feature-icon-wrapper">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="feature-icon" aria-hidden="true">
-                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
-              </svg>
-              <span class="feature-number">02</span>
-            </div>
-            <h3 class="feature-title">Featherlight, Eyelid-Hugging Comfort</h3>
-            <p class="feature-text">
-              Sensitised eyelids from cancer treatments or alopecia are prone to redness and soreness. C-Lash weighs less than a single gram, gently flexing as you blink for all-day weightless wear.
-            </p>
-            <ul class="feature-list">
-              <li>Flexes naturally with eyelid movements</li>
-              <li>Gentle, non-tugging skin removal</li>
-              <li>Hypoallergenic latex-free safe adhesive</li>
-            </ul>
-          </div>
-
-          <div class="feature-card">
-            <div class="feature-icon-wrapper">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" class="feature-icon" aria-hidden="true">
-                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-              </svg>
-              <span class="feature-number">03</span>
-            </div>
-            <h3 class="feature-title">Soft, Dignified Natural Blend</h3>
-            <p class="feature-text">
-              Co-created with the master lash artisans at Eylure London, each synthetic fibre is tapered to mimic real lash flutter, restoring your natural facial symmetry and eye expression.
-            </p>
-            <ul class="feature-list">
-              <li>Subtle daytime styles through soft glam</li>
-              <li>Finely tapered tips with subtle curl</li>
-              <li>100% Vegan &amp; Cruelty-Free certified</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Comparative Diagram: Traditional vs. C-Lash -->
-        <div class="comparison-card">
-          <div class="comparison-header">
-            <h3>Understanding the Anatomy: Traditional Lashes vs. C-Lash</h3>
-            <p>Why conventional false lashes fail on bare or sensitive eyelids</p>
-          </div>
-          <div class="comparison-grid">
-            <div class="comparison-col standard">
-              <div class="col-pill">Conventional False Lashes</div>
-              <ul class="comparison-points">
-                <li><span class="cross">&times;</span> Requires existing natural lashes to balance against</li>
-                <li><span class="cross">&times;</span> Narrow cotton/nylon band flips downwards onto the eye</li>
-                <li><span class="cross">&times;</span> Harsh latex glue bonds to hair follicles, risking damage to regrowing fuzz</li>
-                <li><span class="cross">&times;</span> Stiff band pinches sensitised eyelids and triggers watering</li>
-              </ul>
-            </div>
-            <div class="comparison-col clash">
-              <div class="col-pill success">The C-Lash Patented Silicone System</div>
-              <ul class="comparison-points">
-                <li><span class="check">&#10003;</span> Anchors directly to bare skin with flat ergonomic silicone</li>
-                <li><span class="check">&#10003;</span> Band stays upright and arched regardless of lash volume</li>
-                <li><span class="check">&#10003;</span> Gentle medical-grade hypoallergenic glue peels off painlessly</li>
-                <li><span class="check">&#10003;</span> Featherweight silicone cushions the lid against friction</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Interactive Before & After Transformation Section -->
-    <section class="section transformation-section" id="transformation" aria-labelledby="transformation-title">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-tag">REALISTIC CLINICAL BEAUTY</span>
-          <h2 id="transformation-title" class="section-title">The Difference: Restoring Your Natural Frame</h2>
-          <p class="section-subtitle">
-            See the gentle, featherlight transformation on bare eyelids. Designed to bring back natural facial expression and eye warmth without harsh glues or heavy unnatural bands.
-          </p>
-        </div>
-
-        <div class="comparison-slider-container">
-          <!-- Accessible Toggle Buttons for Mobile & Screen Readers -->
-          <div class="slider-toggle-bar">
-            <button class="slider-btn active" id="btn-show-after" data-mode="after">
-              <span>✦ With C-Lash Applied</span>
-            </button>
-            <button class="slider-btn" id="btn-show-split" data-mode="split">
-              <span>Interactive Split Slider</span>
-            </button>
-            <button class="slider-btn" id="btn-show-before" data-mode="before">
-              <span>Bare Eyelid (Before)</span>
-            </button>
-          </div>
-
-          <!-- Dual Visual Split Viewer -->
-          <div class="ba-slider" id="ba-slider">
-            <!-- After Image (Base) -->
-            <div class="ba-image-wrapper ba-after">
-              <img 
-                src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1200&q=80" 
-                alt="After: Eyelid restored with C-Lash Naturale gentle silicone eyelash"
-                class="ba-img"
-              />
-              <span class="ba-label ba-label-after">AFTER: C-Lash Naturale Applied</span>
-            </div>
-
-            <!-- Before Image (Overlay clipped by slider) -->
-            <div class="ba-image-wrapper ba-before" id="ba-before-layer">
-              <img 
-                src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=1200&q=80" 
-                alt="Before: Sensitive bare eyelid without eyelashes"
-                class="ba-img"
-              />
-              <span class="ba-label ba-label-before">BEFORE: Bare Sensitive Eyelid</span>
-            </div>
-
-            <!-- Draggable Divider Handle -->
-            <div class="ba-handle" id="ba-handle" aria-label="Drag to compare before and after" role="slider" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-              <div class="ba-handle-line"></div>
-              <div class="ba-handle-circle">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="handle-icon" aria-hidden="true">
-                  <polyline points="15 18 9 12 15 6"></polyline>
-                </svg>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="handle-icon" aria-hidden="true">
-                  <polyline points="9 18 15 12 9 6"></polyline>
-                </svg>
-              </div>
-              <div class="ba-handle-line"></div>
-            </div>
-          </div>
-
-          <!-- Slider Benefit Highlights -->
-          <div class="ba-benefits-row">
-            <div class="ba-benefit">
-              <span class="benefit-dot"></span>
-              <span><strong>Invisible Baseline:</strong> Clear medical silicone vanishes against skin tone</span>
-            </div>
-            <div class="ba-benefit">
-              <span class="benefit-dot"></span>
-              <span><strong>Zero Pull:</strong> Does not attach to hair follicles or recovering peach fuzz</span>
-            </div>
-            <div class="ba-benefit">
-              <span class="benefit-dot"></span>
-              <span><strong>Restores Expression:</strong> Balances facial symmetry immediately</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Product Collection (Interactive Catalog) -->
-    <section class="section collection-section" id="collection" aria-labelledby="collection-title">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-tag">THE EYLURE &times; CODILIA EDIT</span>
-          <h2 id="collection-title" class="section-title">Designed for Everyday Dignity &amp; Elegance</h2>
-          <p class="section-subtitle">
-            Every style comes complete with our patented silicone strip and a bottle of dermatologically tested, latex-free C-Lash adhesive.
-          </p>
-        </div>
-
-        <!-- Filter Tabs -->
-        <div class="filter-wrapper" role="tablist" aria-label="Product categories">
-          <button class="filter-tab active" data-category="all" role="tab" aria-selected="true">All Styles (<span id="count-all">6</span>)</button>
-          <button class="filter-tab" data-category="natural" role="tab" aria-selected="false">Everyday Natural</button>
-          <button class="filter-tab" data-category="lengthening" role="tab" aria-selected="false">Lengthening</button>
-          <button class="filter-tab" data-category="volume" role="tab" aria-selected="false">Soft Volume</button>
-          <button class="filter-tab" data-category="multipack" role="tab" aria-selected="false">Multipacks &amp; Sets</button>
-        </div>
-
-        <!-- Catalog Grid (6 Products) -->
-        <div class="products-grid" id="products-grid">
-          <!-- Rendered dynamically by script.js with rich fallbacks -->
-        </div>
-
-        <!-- Collection Reassurance Callout -->
-        <div class="collection-reassurance">
-          <div class="reassurance-item">
-            <div class="reassurance-icon">🌱</div>
-            <div>
-              <strong>100% Vegan &amp; Cruelty-Free</strong>
-              <p>PETA certified, no animal testing or real mink hair ever.</p>
-            </div>
-          </div>
-          <div class="reassurance-item">
-            <div class="reassurance-icon">💧</div>
-            <div>
-              <strong>Latex-Free Gentle Adhesive Included</strong>
-              <p>Enriched with soothing chamomile for zero sting.</p>
-            </div>
-          </div>
-          <div class="reassurance-item">
-            <div class="reassurance-icon">🔁</div>
-            <div>
-              <strong>Reusable Up To 10 Times</strong>
-              <p>Clean effortlessly with warm water and micellar wash.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- How It Works / Step-by-Step Guidance -->
-    <section class="section how-it-works-section" id="how-it-works" aria-labelledby="how-it-works-title">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-tag">EFFORTLESS APPLICATION</span>
-          <h2 id="how-it-works-title" class="section-title">Application Without Lashes in 3 Simple Steps</h2>
-          <p class="section-subtitle">
-            Applying false lashes without natural hairs can feel daunting. We designed C-Lash so anyone can master it in under two minutes.
-          </p>
-        </div>
-
-        <div class="steps-grid">
-          <div class="step-card">
-            <div class="step-badge">STEP 01</div>
-            <div class="step-visual">
-              <span class="step-glyph">👁️</span>
-            </div>
-            <h3 class="step-title">Measure &amp; Prep</h3>
-            <p class="step-text">
-              Hold the C-Lash band against your eyelid to check the fit. If needed, gently trim the outer edge of the band using cuticle scissors for a bespoke fit to your eye contour.
-            </p>
-            <div class="step-tip">
-              <strong>Tip:</strong> Ensure your eyelid is completely clean and oil-free before applying.
-            </div>
-          </div>
-
-          <div class="step-card">
-            <div class="step-badge">STEP 02</div>
-            <div class="step-visual">
-              <span class="step-glyph">🧴</span>
-            </div>
-            <h3 class="step-title">Apply Gentle Adhesive</h3>
-            <p class="step-text">
-              Apply a thin, uniform line of the included C-Lash latex-free glue across the broad silicone band. Wait 20 to 30 seconds until the adhesive turns clear and slightly tacky.
-            </p>
-            <div class="step-tip">
-              <strong>Tip:</strong> The patented wider silicone band makes glue application completely mess-free.
-            </div>
-          </div>
-
-          <div class="step-card">
-            <div class="step-badge">STEP 03</div>
-            <div class="step-visual">
-              <span class="step-glyph">✨</span>
-            </div>
-            <h3 class="step-title">Place &amp; Press</h3>
-            <p class="step-text">
-              Looking downwards into a mirror, place the silicone strip directly on the skin as close to your natural lash line as possible. Gently press down from the centre outwards for 5 seconds.
-            </p>
-            <div class="step-tip">
-              <strong>Tip:</strong> To remove, gently peel from the outer corner. Skin feels calm and residue-free.
-            </div>
-          </div>
-        </div>
-
-        <div class="guide-banner">
-          <div class="guide-banner-text">
-            <h4>Need a demonstration for yourself or a loved one?</h4>
-            <p>Download our free step-by-step Oncology &amp; Alopecia Beauty PDF Care Guide.</p>
-          </div>
-          <button class="btn btn-primary" id="download-guide-btn">
-            <span>Get Free PDF Care Guide</span>
-            <svg viewBox="0 0 20 20" fill="currentColor" class="btn-arrow" aria-hidden="true"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <!-- Codilia's Story (Founder & Purpose Spotlight) -->
-    <section class="section story-section" id="story" aria-labelledby="story-title">
-      <div class="container story-grid">
-        <!-- Editorial Image Box -->
-        <div class="story-visual">
-          <div class="story-image-frame">
-            <img 
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80" 
-              alt="Codilia Gapare, founder and inventor of C-Lash"
-              class="story-founder-img"
-              loading="lazy"
-            />
-            <div class="story-badge-card">
-              <span class="story-badge-year">2014 &ndash; Today</span>
-              <span class="story-badge-title">British-Zimbabwean Entrepreneur &amp; Cancer Survivor</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Story Narrative Content -->
-        <div class="story-content">
-          <div class="section-tag">THE FOUNDER'S JOURNEY</div>
-          <h2 id="story-title" class="section-title">"Losing My Lashes Felt Like Losing My Face."</h2>
-
-          <blockquote class="founder-quote">
-            &ldquo;When I was diagnosed with breast cancer in 2014, I braced myself for hair loss. But no one warned me about losing my eyelashes. Suddenly, I didn’t recognize myself in the mirror. My eyes lost their frame, their expression, their warmth. Getting them back wasn’t vanity — it was restoring my dignity.&rdquo;
-            <cite>&mdash; Codilia Gapare, Inventor &amp; Founder</cite>
-          </blockquote>
-
-          <div class="story-body">
-            <p>
-              While undergoing chemotherapy, Codilia tried every false lash on the high street. Every pair fell off within hours or tore at her raw, sensitive skin because conventional bands require natural lashes to support them.
-            </p>
-            <p>
-              Refusing to accept that people going through cancer or living with alopecia should have to choose between eye discomfort or feeling stripped of their confidence, Codilia sat down at her kitchen table with silicone prototypes and began designing the world’s first flat-contact skin-band lash.
-            </p>
-            <p>
-              Partnering with global lash heritage brand <strong>Eylure London</strong>, C-Lash made history by bringing clinically considerate, emotionally uplifting beauty to mainstream Boots and Superdrug shelves across the nation.
-            </p>
-          </div>
-
-          <div class="story-footer">
-            <button class="btn btn-secondary video-play-trigger" data-video-src="founder" aria-label="Watch Codilia's BBC & Sunday Times Story">
-              <span class="btn-play-circle">
-                <svg viewBox="0 0 24 24" fill="currentColor" class="play-icon" aria-hidden="true">
-                  <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                </svg>
-              </span>
-              <span>Watch Codilia's Feature Documentary</span>
-            </button>
-            <div class="story-signoff">
-              <span class="signature-font">Codilia Gapare</span>
-              <span class="signature-title">MBE Candidate &amp; Founder</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Social Proof & Video Reels (Instagram / Community) -->
-    <section class="section community-section" id="community" aria-labelledby="community-title">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-tag">COMMUNITY TRANSFORMATIONS</span>
-          <h2 id="community-title" class="section-title">Real Stories. Real Confidence.</h2>
-          <p class="section-subtitle">
-            See how the C-Lash Circle wears their lashes everyday — from cancer fighters to alopecia advocates and sensitive skin beauty lovers.
-          </p>
-        </div>
-
-        <!-- 4 Reel / Video Cards -->
-        <div class="reels-grid">
-          <!-- Reel 1 -->
-          <div class="reel-card" data-video-id="reel-1">
-            <div class="reel-thumbnail-wrapper">
-              <img 
-                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80" 
-                alt="Sarah wearing C-Lash Naturale post-chemotherapy"
-                class="reel-thumbnail"
-                loading="lazy"
-              />
-              <div class="reel-overlay">
-                <button class="reel-play-btn" aria-label="Play video review by Sarah M.">
-                  <svg viewBox="0 0 24 24" fill="currentColor" class="reel-play-icon" aria-hidden="true">
-                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                  </svg>
-                </button>
-                <div class="reel-duration">0:48</div>
-              </div>
-            </div>
-            <div class="reel-info">
-              <span class="reel-tag">Chemo Journey</span>
-              <h4 class="reel-title">"First time feeling like me again after 6 cycles of AC chemo."</h4>
-              <p class="reel-author">Sarah M. &bull; London, UK</p>
-            </div>
-          </div>
-
-          <!-- Reel 2 -->
-          <div class="reel-card" data-video-id="reel-2">
-            <div class="reel-thumbnail-wrapper">
-              <img 
-                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&q=80" 
-                alt="Nurse Emma demonstrating C-Lash application"
-                class="reel-thumbnail"
-                loading="lazy"
-              />
-              <div class="reel-overlay">
-                <button class="reel-play-btn" aria-label="Play application tutorial with Nurse Emma">
-                  <svg viewBox="0 0 24 24" fill="currentColor" class="reel-play-icon" aria-hidden="true">
-                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                  </svg>
-                </button>
-                <div class="reel-duration">1:12</div>
-              </div>
-            </div>
-            <div class="reel-info">
-              <span class="reel-tag">Nurse Tutorial</span>
-              <h4 class="reel-title">"Application guide with ZERO natural lashes: A step-by-step masterclass."</h4>
-              <p class="reel-author">Emma R., Oncology Aesthetics Nurse</p>
-            </div>
-          </div>
-
-          <!-- Reel 3 -->
-          <div class="reel-card" data-video-id="reel-3">
-            <div class="reel-thumbnail-wrapper">
-              <img 
-                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" 
-                alt="Kiran, Alopecia UK Ambassador reviewing C-Lash Lengthening"
-                class="reel-thumbnail"
-                loading="lazy"
-              />
-              <div class="reel-overlay">
-                <button class="reel-play-btn" aria-label="Play video review by Kiran T.">
-                  <svg viewBox="0 0 24 24" fill="currentColor" class="reel-play-icon" aria-hidden="true">
-                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                  </svg>
-                </button>
-                <div class="reel-duration">0:55</div>
-              </div>
-            </div>
-            <div class="reel-info">
-              <span class="reel-tag">Alopecia UK</span>
-              <h4 class="reel-title">"Living with Alopecia Totalis for 12 years. These are the ONLY lashes that stay put."</h4>
-              <p class="reel-author">Kiran T. &bull; Birmingham, UK</p>
-            </div>
-          </div>
-
-          <!-- Reel 4 -->
-          <div class="reel-card" data-video-id="reel-4">
-            <div class="reel-thumbnail-wrapper">
-              <img 
-                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" 
-                alt="Dr Clara Dermatologist reviewing C-Lash silicone band safety"
-                class="reel-thumbnail"
-                loading="lazy"
-              />
-              <div class="reel-overlay">
-                <button class="reel-play-btn" aria-label="Play review by Dr Clara H.">
-                  <svg viewBox="0 0 24 24" fill="currentColor" class="reel-play-icon" aria-hidden="true">
-                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                  </svg>
-                </button>
-                <div class="reel-duration">1:04</div>
-              </div>
-            </div>
-            <div class="reel-info">
-              <span class="reel-tag">Medical Review</span>
-              <h4 class="reel-title">"Why the flexible medical silicone contact avoids eyelid dermatitis."</h4>
-              <p class="reel-author">Dr. Clara H. &bull; Cosmetic Dermatologist</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="community-instagram-cta">
-          <p>Join over 45,000 members sharing their everyday beauty moments</p>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="instagram-handle">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ig-icon" aria-hidden="true">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-            </svg>
-            <span>Follow @c.lashbycody &bull; Share with #MyCLashMoment</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Patient Reviews & Clinical Trust Section -->
-    <section class="section reviews-section" id="reviews" aria-labelledby="reviews-title">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-tag">VERIFIED PATIENT &amp; COMMUNITY STORIES</span>
-          <h2 id="reviews-title" class="section-title">Loved by Over 45,000 Individuals Worldwide</h2>
-          <p class="section-subtitle">
-            Read honest reflections from people navigating cancer treatment, living with alopecia, or discovering gentle daily comfort for sensitive eyes.
-          </p>
-        </div>
-
-        <!-- Rating Summary Box -->
-        <div class="reviews-summary-card">
-          <div class="summary-score-col">
-            <span class="summary-score-num">4.9</span>
-            <div class="summary-stars" aria-label="Rated 4.9 out of 5 stars">★★★★★</div>
-            <span class="summary-count-label">Based on 1,420+ Verified Patient Reviews</span>
-            <div class="summary-micro-tag">
-              <span class="badge-dot"></span>
-              <span>100% Genuine Clinical Testimonials</span>
-            </div>
-          </div>
-
-          <div class="summary-breakdown-col">
-            <div class="breakdown-bar-row">
-              <span class="bar-label">5 Stars</span>
-              <div class="bar-track"><div class="bar-fill" style="width: 92%"></div></div>
-              <span class="bar-pct">92%</span>
-            </div>
-            <div class="breakdown-bar-row">
-              <span class="bar-label">4 Stars</span>
-              <div class="bar-track"><div class="bar-fill" style="width: 7%"></div></div>
-              <span class="bar-pct">7%</span>
-            </div>
-            <div class="breakdown-bar-row">
-              <span class="bar-label">3 Stars</span>
-              <div class="bar-track"><div class="bar-fill" style="width: 1%"></div></div>
-              <span class="bar-pct">1%</span>
-            </div>
-            <div class="breakdown-bar-row">
-              <span class="bar-label">2 Stars</span>
-              <div class="bar-track"><div class="bar-fill" style="width: 0%"></div></div>
-              <span class="bar-pct">0%</span>
-            </div>
-          </div>
-
-          <div class="summary-cta-col">
-            <div class="summary-reassurance">
-              <strong>98% of patients</strong> reported zero eyelid stinging, soreness, or redness upon removal.
-            </div>
-            <button class="btn btn-secondary review-write-trigger" id="open-review-modal-btn">
-              <span>Write a Patient Review</span>
-            </button>
-          </div>
-        </div>
-
-        <!-- Review Category Filter Tabs -->
-        <div class="review-filter-tabs" role="tablist" aria-label="Review Categories">
-          <button class="review-filter-tab active" data-filter="all">All Reviews (1,420)</button>
-          <button class="review-filter-tab" data-filter="chemo">Chemotherapy (780)</button>
-          <button class="review-filter-tab" data-filter="alopecia">Alopecia (410)</button>
-          <button class="review-filter-tab" data-filter="sensitive">Sensitive Eyelids (230)</button>
-        </div>
-
-        <!-- Reviews Grid -->
-        <div class="reviews-grid" id="reviews-grid">
-          <!-- Rendered via script.js with rich fallbacks -->
-        </div>
-      </div>
-    </section>
-
-    <!-- Educational Accordion ("Everything You Need to Know" & Medical Advice) -->
-    <section class="section faq-section" id="faq" aria-labelledby="faq-title">
-      <div class="container">
-        <div class="section-header text-center">
-          <span class="section-tag" id="medical-advice">MEDICAL ADVICE &amp; GUIDANCE</span>
-          <h2 id="faq-title" class="section-title">Everything You Need to Know</h2>
-          <p class="section-subtitle">
-            Expert answers on oncology safety, sensitive eyes, application nuances, and gentle aftercare.
-          </p>
-        </div>
-
-        <div class="faq-container" role="region" aria-label="Frequently Asked Questions">
-          <!-- Accordion Item 1 -->
-          <div class="faq-item">
-            <button class="faq-trigger" aria-expanded="false" id="faq-q1" aria-controls="faq-a1">
-              <span class="faq-question">How do I apply C-Lash if I have zero natural eyelashes?</span>
-              <span class="faq-chevron" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </span>
-            </button>
-            <div class="faq-content" id="faq-a1" role="region" aria-labelledby="faq-q1" hidden>
-              <div class="faq-inner">
-                <p>
-                  That is precisely what C-Lash was patented to do! Conventional false lashes require existing lashes to lean on. C-Lash has a flexible, flattened medical-grade silicone skin-band that adheres directly to the bare eyelid skin along your lash line.
-                </p>
-                <p>
-                  Simply check length against your eye, apply a thin line of the included latex-free glue along the flat silicone surface, let it get tacky for 20-30 seconds, and place it directly on your eyelid skin using fingertips or tweezers. It will anchor securely and naturally.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Accordion Item 2 -->
-          <div class="faq-item">
-            <button class="faq-trigger" aria-expanded="false" id="faq-q2" aria-controls="faq-a2">
-              <span class="faq-question">Can I wear C-Lash during active chemotherapy treatment?</span>
-              <span class="faq-chevron" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </span>
-            </button>
-            <div class="faq-content" id="faq-a2" role="region" aria-labelledby="faq-q2" hidden>
-              <div class="faq-inner">
-                <p>
-                  Yes, many individuals safely wear C-Lash throughout chemotherapy. Our formula is latex-free, dermatologically tested, and free from irritating synthetic fragrances. 
-                </p>
-                <p>
-                  <strong>Clinical note:</strong> We always recommend doing a small patch test of the adhesive on your inner wrist or behind your ear 24 hours before your first wear. If your oncology medical team has advised you that your white blood cell count is currently very low (neutropenia), or if your eyelids show open sores, consult your breast cancer nurse or oncology team first.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Accordion Item 3 -->
-          <div class="faq-item">
-            <button class="faq-trigger" aria-expanded="false" id="faq-q3" aria-controls="faq-a3">
-              <span class="faq-question">Are C-Lashes reusable, and how do I clean them?</span>
-              <span class="faq-chevron" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </span>
-            </button>
-            <div class="faq-content" id="faq-a3" role="region" aria-labelledby="faq-q3" hidden>
-              <div class="faq-inner">
-                <p>
-                  Yes! With gentle care, each pair of C-Lash can be reused up to <strong>10 times</strong>. Because the band is durable, flexible silicone rather than delicate cotton thread, it retains its ergonomic curve and cleans much more easily.
-                </p>
-                <p>
-                  To clean: gently peel away excess dried adhesive from the silicone strip using tweezers. Wipe the band with a cotton swab soaked in oil-free micellar water or saline solution, then place them back into their sculpted plastic tray to maintain their natural curve.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Accordion Item 4 -->
-          <div class="faq-item">
-            <button class="faq-trigger" aria-expanded="false" id="faq-q4" aria-controls="faq-a4">
-              <span class="faq-question">What adhesive is recommended for hyper-sensitive eyes?</span>
-              <span class="faq-chevron" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </span>
-            </button>
-            <div class="faq-content" id="faq-a4" role="region" aria-labelledby="faq-q4" hidden>
-              <div class="faq-inner">
-                <p>
-                  Every C-Lash pack includes our custom <strong>Eylure &times; C-Lash Hypoallergenic Adhesive</strong>. It is 100% latex-free, formaldehyde-free, and formulated with soothing botanical extracts to prevent redness or watery eyes.
-                </p>
-                <p>
-                  Unlike standard glues that dry rock-hard and pull on delicate tissue upon removal, our adhesive forms a soft, flexible silicone-compatible bond that releases gently with lukewarm water.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Accordion Item 5 -->
-          <div class="faq-item">
-            <button class="faq-trigger" aria-expanded="false" id="faq-q5" aria-controls="faq-a5">
-              <span class="faq-question">Can I wear these if I have Alopecia or Trichotillomania?</span>
-              <span class="faq-chevron" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </span>
-            </button>
-            <div class="faq-content" id="faq-a5" role="region" aria-labelledby="faq-q5" hidden>
-              <div class="faq-inner">
-                <p>
-                  Absolutely. C-Lash is widely recommended across the Alopecia UK and trichotillomania community. Because the band adheres to the skin rather than anchoring to hair strands, it will not pull out fragile baby lashes or disturb recovering hair follicles during regrowth.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Accordion Item 6 -->
-          <div class="faq-item">
-            <button class="faq-trigger" aria-expanded="false" id="faq-q6" aria-controls="faq-a6">
-              <span class="faq-question">How do I remove C-Lash without irritating my bare eyelids?</span>
-              <span class="faq-chevron" aria-hidden="true">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
-              </span>
-            </button>
-            <div class="faq-content" id="faq-a6" role="region" aria-labelledby="faq-q6" hidden>
-              <div class="faq-inner">
-                <p>
-                  Removal is completely pain-free. Hold a damp, lukewarm cloth or cotton pad soaked in gentle micellar water over your closed eyes for 15 seconds to soften the adhesive bond. Gently take the outer corner of the silicone band and peel slowly inwards towards your nose. Never rip or tug quickly.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Newsletter & Community Signup -->
-    <section class="section newsletter-section" aria-labelledby="newsletter-title">
-      <div class="container">
-        <div class="newsletter-card">
-          <div class="newsletter-decor" aria-hidden="true"></div>
-          <div class="newsletter-content">
-            <span class="section-tag light">JOIN THE C-LASH CIRCLE</span>
-            <h2 id="newsletter-title" class="newsletter-heading">Receive Our Compassionate Care Guides &amp; 10% Off Your First Order</h2>
-            <p class="newsletter-sub">
-              Get access to expert oncological beauty advice, founder updates from Codilia, and early access to new gentle styles.
-            </p>
-
-            <form class="newsletter-form" id="newsletter-form">
-              <div class="form-group">
-                <label for="newsletter-email" class="sr-only">Your email address</label>
-                <input 
-                  type="email" 
-                  id="newsletter-email" 
-                  class="newsletter-input" 
-                  placeholder="Enter your email address" 
-                  required 
-                  autocomplete="email"
-                />
-                <button type="submit" class="btn btn-primary newsletter-submit" id="newsletter-btn">
-                  <span>Join the Circle</span>
-                  <svg viewBox="0 0 20 20" fill="currentColor" class="btn-arrow" aria-hidden="true">
-                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-                  </svg>
-                </button>
-              </div>
-
-              <div class="form-checkbox-group">
-                <label class="checkbox-container">
-                  <input type="checkbox" id="oncology-guide-check" checked>
-                  <span class="checkmark"></span>
-                  <span class="checkbox-text">Send me the free digital "Eyelash &amp; Brow Care During Medical Treatment" PDF eBook</span>
-                </label>
-              </div>
-
-              <p class="form-disclaimer">
-                We respect your privacy. No spam, ever. Unsubscribe with one click anytime.
-              </p>
-            </form>
-
-            <div class="newsletter-success" id="newsletter-success" hidden>
-              <div class="success-icon">✓</div>
-              <h3>Welcome to the C-Lash Circle!</h3>
-              <p>We've sent your 10% welcome discount code <strong>WELCOME10</strong> and your free care guide to your inbox.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container footer-top">
-      <!-- Col 1: Brand & Purpose -->
-      <div class="footer-col brand-col">
-        <a href="#" class="footer-logo">
-          <span class="logo-title">C-LASH</span>
-          <span class="logo-subtitle">BY CODILIA &times; EYLURE LONDON</span>
+      <div class="ticker-socials">
+        <span class="ticker-social-label">Join Our Circle:</span>
+        <a href="https://www.instagram.com/c.lashbycody/" target="_blank" rel="noopener noreferrer" class="ticker-social-link" aria-label="Follow C-Lash on Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ticker-icon"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
         </a>
-        <p class="footer-bio">
-          Empowering individuals experiencing medical eyelash loss to look and feel like themselves again. Patented silicone innovation co-created with Eylure London.
-        </p>
-        <div class="footer-badges">
-          <span class="badge-pill">🌱 100% Vegan</span>
-          <span class="badge-pill">🐰 Cruelty-Free</span>
-          <span class="badge-pill">🩺 Dermatologist Tested</span>
-        </div>
-      </div>
-
-      <!-- Col 2: Shop Links -->
-      <div class="footer-col">
-        <h4 class="footer-heading">Shop Lashes</h4>
-        <ul class="footer-nav">
-          <li><a href="#collection" data-filter="natural">Everyday Naturale No. 101</a></li>
-          <li><a href="#collection" data-filter="lengthening">Lengthening No. 110</a></li>
-          <li><a href="#collection" data-filter="volume">Soft Volume No. 120</a></li>
-          <li><a href="#collection" data-filter="natural">Petite Contour No. 105</a></li>
-          <li><a href="#collection" data-filter="multipack">Recovery Multipack Set</a></li>
-          <li><a href="#collection">Hypoallergenic Latex-Free Glue</a></li>
-        </ul>
-      </div>
-
-      <!-- Col 3: Education & Support -->
-      <div class="footer-col">
-        <h4 class="footer-heading">Care &amp; Guidance</h4>
-        <ul class="footer-nav">
-          <li><a href="#how-it-works">How to Apply (No Lash Guide)</a></li>
-          <li><a href="#faq">Chemotherapy &amp; Alopecia FAQ</a></li>
-          <li><a href="#story">Codilia's Story</a></li>
-          <li><a href="#community">Community Transformations</a></li>
-          <li><a href="#faq">Cleaning &amp; Reusability</a></li>
-          <li><a href="#medical-advice">Oncology Nurse Tips</a></li>
-        </ul>
-      </div>
-
-      <!-- Col 4: Official Stockists & Trust -->
-      <div class="footer-col">
-        <h4 class="footer-heading">Official Stockists</h4>
-        <p class="footer-stockist-text">Available online and in selected UK high street pharmacies:</p>
-        <div class="stockist-tags">
-          <span class="stockist-tag">Boots UK</span>
-          <span class="stockist-tag">Superdrug</span>
-          <span class="stockist-tag">Amazon UK</span>
-          <span class="stockist-tag">FeelUnique</span>
-          <span class="stockist-tag">LookFantastic</span>
-        </div>
-        <div class="footer-socials">
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-          </a>
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-          </a>
-          <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Medical & Safety Disclaimer Notice -->
-    <div class="footer-disclaimer-bar">
-      <div class="container">
-        <p>
-          <strong>Medical &amp; Safety Disclaimer:</strong> C-Lash products are dermatologically tested cosmetic aids and are not intended to diagnose, treat, cure, or prevent any medical condition. If you are currently undergoing active radiation therapy to the eye area or have open wounds or severe eyelid inflammation, please consult your oncology medical team before cosmetic application.
-        </p>
-      </div>
-    </div>
-
-    <!-- Footer Copyright & Legal -->
-    <div class="container footer-bottom">
-      <p class="copyright">&copy; <span id="current-year">2026</span> C-Lash by Codilia. Co-created in collaboration with Eylure London. All Rights Reserved.</p>
-      <div class="footer-legal-links">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Service</a>
-        <a href="#">Accessibility Statement</a>
-        <a href="#">Shipping &amp; Returns</a>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Slide-out Shopping Cart Drawer -->
-  <div class="cart-backdrop" id="cart-backdrop" aria-hidden="true"></div>
-  <aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-heading" aria-modal="true" role="dialog" aria-hidden="true">
-    <div class="cart-drawer-header">
-      <div class="cart-header-title-box">
-        <h2 id="cart-heading" class="cart-title">Your Shopping Bag</h2>
-        <span class="cart-item-count-text">(<span id="cart-drawer-count">0</span> items)</span>
-      </div>
-      <button class="cart-close-btn" id="cart-close-btn" aria-label="Close cart drawer">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="18" y1="6" x2="6" y2="18"></line>
-          <line x1="6" y1="6" x2="18" y2="18"></line>
-        </svg>
-      </button>
-    </div>
-
-    <!-- Free Delivery Progress Tracker -->
-    <div class="cart-shipping-tracker">
-      <div class="shipping-tracker-label" id="shipping-tracker-label">
-        Add <span class="shipping-remaining" id="shipping-remaining">£25.00</span> more to qualify for <strong>Free UK Delivery</strong>!
-      </div>
-      <div class="shipping-progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-        <div class="shipping-progress-fill" id="shipping-progress-fill" style="width: 0%"></div>
-      </div>
-    </div>
-
-    <!-- Same-Day Dispatch Live Tracker -->
-    <div class="cart-dispatch-banner">
-      <span class="dispatch-pulse-dot"></span>
-      <span>Order within <strong id="dispatch-countdown">2h 14m</strong> for Same-Day UK Royal Mail 1st Class Dispatch</span>
-    </div>
-
-    <!-- Cart Items Scrollable List -->
-    <div class="cart-items-container" id="cart-items-container">
-      <!-- Items dynamically populated via JavaScript -->
-      <div class="cart-empty-state" id="cart-empty-state">
-        <div class="empty-icon">🛍️</div>
-        <h3>Your shopping bag is empty</h3>
-        <p>Explore our patented gentle lashes designed to restore your natural beauty.</p>
-        <button class="btn btn-primary" id="cart-shop-now-btn">Shop Lash Collection</button>
-      </div>
-    </div>
-
-    <!-- Care Routine Essentials Upsell Block -->
-    <div class="cart-upsell-block" id="cart-upsell-block">
-      <div class="upsell-heading-row">
-        <span class="upsell-tag">RECOMMENDED PAIRING</span>
-        <h4 class="upsell-title">Sensitive Care Essentials</h4>
-      </div>
-      <div class="upsell-list" id="upsell-list">
-        <!-- Rendered by JS -->
-      </div>
-    </div>
-
-    <!-- Cart Footer & Checkout -->
-    <div class="cart-drawer-footer" id="cart-drawer-footer">
-      <!-- Promo Code Section -->
-      <div class="cart-promo-section">
-        <div class="promo-input-group">
-          <label for="promo-input" class="sr-only">Promo or Gift Code</label>
-          <input type="text" id="promo-input" placeholder="Promo code (Try: WELCOME10)" class="promo-input">
-          <button class="btn-promo-apply" id="promo-apply-btn">Apply</button>
-        </div>
-        <div class="promo-feedback" id="promo-feedback"></div>
-      </div>
-
-      <!-- Financial Totals -->
-      <div class="cart-totals">
-        <div class="cart-total-row">
-          <span>Subtotal</span>
-          <span class="total-amount" id="cart-subtotal">£0.00</span>
-        </div>
-        <div class="cart-total-row discount-row" id="cart-discount-row" hidden>
-          <span class="discount-label">Discount (<span id="discount-percent-label">10%</span>)</span>
-          <span class="discount-amount" id="cart-discount-amount">-£0.00</span>
-        </div>
-        <div class="cart-total-row">
-          <span>UK Standard Shipping</span>
-          <span class="shipping-cost-label" id="cart-shipping-cost">£3.50</span>
-        </div>
-        <div class="cart-total-row total-highlight">
-          <span>Estimated Total</span>
-          <span class="total-grand" id="cart-grand-total">£0.00</span>
-        </div>
-      </div>
-
-      <div class="cart-checkout-actions">
-        <button class="btn btn-primary btn-checkout" id="checkout-btn">
-          <span>Proceed to Secure Checkout</span>
-          <svg viewBox="0 0 20 20" fill="currentColor" class="btn-arrow" aria-hidden="true">
-            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
-          </svg>
-        </button>
-        <div class="payment-guarantee">
-          <span>🔒 256-bit Encrypted SSL &bull; 30-Day Gentle Guarantee</span>
-        </div>
+        <a href="https://www.facebook.com/c.lashbycody" target="_blank" rel="noopener noreferrer" class="ticker-social-link" aria-label="Follow C-Lash on Facebook">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ticker-icon"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+        </a>
+        <a href="https://twitter.com/c_lashbycody" target="_blank" rel="noopener noreferrer" class="ticker-social-link" aria-label="Follow C-Lash on X (Twitter)">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ticker-icon"><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg>
+        </a>
+        <a href="https://www.linkedin.com/company/c-lash/" target="_blank" rel="noopener noreferrer" class="ticker-social-link" aria-label="Connect with C-Lash on LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="ticker-icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
       </div>
     </div>
   </aside>
 
-  <!-- Quick View Product Modal -->
-  <div class="modal-backdrop" id="quick-view-backdrop" aria-hidden="true"></div>
-  <div class="quick-view-modal" id="quick-view-modal" role="dialog" aria-modal="true" aria-labelledby="modal-prod-title" aria-hidden="true">
-    <button class="modal-close-btn" id="quick-view-close" aria-label="Close product quick view">
-      &times;
-    </button>
-    <div class="quick-view-content" id="quick-view-content">
-      <!-- Populated via script.js -->
-    </div>
-  </div>
+  <!-- Sticky Luxury Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="nav-container">
+      
+      <!-- Left: Mobile Menu Toggle & Search -->
+      <div class="nav-left">
+        <button class="icon-btn mobile-menu-btn" id="mobile-menu-toggle" aria-label="Toggle navigation drawer" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+        <button class="icon-btn search-trigger-btn" id="search-trigger" aria-label="Search lash styles">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="nav-icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+        </button>
+        <nav class="desktop-nav" aria-label="Primary Desktop Navigation">
+          <a href="#collection" class="nav-link">Shop Collection</a>
+          <a href="#innovation" class="nav-link">The Innovation</a>
+          <a href="#reels" class="nav-link">Tutorials &amp; Reels</a>
+          <a href="#founder" class="nav-link">Codilia's Story</a>
+          <a href="#faq" class="nav-link">FAQ &amp; Advice</a>
+        </nav>
+      </div>
 
-  <!-- Video Player Modal -->
-  <div class="modal-backdrop" id="video-backdrop" aria-hidden="true"></div>
-  <div class="video-modal" id="video-modal" role="dialog" aria-modal="true" aria-labelledby="video-modal-title" aria-hidden="true">
-    <button class="modal-close-btn" id="video-modal-close" aria-label="Close video player">
-      &times;
-    </button>
-    <div class="video-modal-content">
-      <div class="video-player-container">
-        <!-- Interactive Simulated Video Screen -->
-        <div class="simulated-video" id="simulated-video">
-          <div class="video-placeholder-bg" id="video-bg-frame"></div>
-          <div class="video-controls-overlay">
-            <button class="video-center-toggle" id="video-center-toggle" aria-label="Play or pause video">
-              <svg viewBox="0 0 24 24" fill="currentColor" class="play-symbol"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+      <!-- Center: Brand Wordmark -->
+      <div class="nav-center">
+        <a href="#" class="brand-link" aria-label="C-Lash by Codilia Home">
+          <span class="brand-eylure">EYLURE LONDON &bull; COLLABORATION</span>
+          <span class="brand-wordmark">
+            C-LASH
+            <span class="brand-cursive">by Codilia</span>
+          </span>
+        </a>
+      </div>
+
+      <!-- Right: Wishlist & Cart Trigger with Animated Bubble -->
+      <div class="nav-right">
+        <button class="icon-btn wishlist-btn" id="wishlist-trigger" aria-label="View saved lashes">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="nav-icon"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+          <span class="badge-bubble" id="wishlist-count" aria-hidden="true">0</span>
+        </button>
+
+        <button class="cart-trigger-btn" id="cart-trigger" aria-label="Open shopping bag">
+          <div class="cart-btn-inner">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="nav-icon"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+            <span class="cart-btn-label">Bag</span>
+            <span class="badge-bubble" id="cart-count" aria-live="polite">0</span>
+          </div>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Off-Canvas Navigation Drawer -->
+  <div class="mobile-drawer-overlay" id="mobile-drawer-overlay" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <div class="mobile-drawer-brand">
+        <span class="brand-wordmark">C-LASH <span class="brand-cursive">by Codilia</span></span>
+      </div>
+      <button class="icon-btn drawer-close-btn" id="drawer-close" aria-label="Close navigation menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="nav-icon"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <div class="mobile-drawer-body">
+      <nav class="mobile-nav-links">
+        <a href="#collection" class="mobile-nav-link" data-close-drawer>
+          <span>Shop The Collection</span>
+          <span class="mobile-arrow">&rarr;</span>
+        </a>
+        <a href="#innovation" class="mobile-nav-link" data-close-drawer>
+          <span>The Silicone Innovation</span>
+          <span class="mobile-arrow">&rarr;</span>
+        </a>
+        <a href="#reels" class="mobile-nav-link" data-close-drawer>
+          <span>Real Stories &amp; Reels</span>
+          <span class="mobile-arrow">&rarr;</span>
+        </a>
+        <a href="#founder" class="mobile-nav-link" data-close-drawer>
+          <span>Codilia's True Story</span>
+          <span class="mobile-arrow">&rarr;</span>
+        </a>
+        <a href="#faq" class="mobile-nav-link" data-close-drawer>
+          <span>Chemo &amp; Medical FAQ</span>
+          <span class="mobile-arrow">&rarr;</span>
+        </a>
+      </nav>
+
+      <div class="mobile-drawer-highlight">
+        <div class="drawer-award-card">
+          <span class="drawer-award-tag">★ ALLURE BEST OF BEAUTY</span>
+          <p>The patented gentle lash designed specifically for complete lash loss.</p>
+        </div>
+      </div>
+
+      <div class="mobile-drawer-footer">
+        <p class="drawer-support-title">Need gentle care advice?</p>
+        <p class="drawer-support-sub">Our sensitive skin team is here to help.</p>
+        <a href="https://www.instagram.com/c.lashbycody/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-full">
+          Follow @c.lashbycody
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <main id="main-content">
+
+    <!-- Hero Section (Prestige Clean-Beauty 3D Showcase) -->
+    <section class="hero-section" id="hero">
+      <!-- Ambient Luxury Lighting Glows -->
+      <div class="ambient-glow glow-mint" aria-hidden="true"></div>
+      <div class="ambient-glow glow-blush" aria-hidden="true"></div>
+
+      <div class="hero-container">
+        
+        <!-- Left: Emotion & Value Proposition -->
+        <div class="hero-content">
+          <div class="hero-tag-wrap">
+            <span class="hero-tag">
+              <span class="pulse-dot"></span>
+              Patented Medical-Grade Silicone Band
+            </span>
+          </div>
+
+          <h1 class="hero-title">
+            Restoring more than lashes.<br />
+            <span class="hero-highlight">Restoring confidence.</span>
+          </h1>
+
+          <p class="hero-subtext">
+            Engineered with a revolutionary self-supporting, flexible silicone band that adheres directly to bare eyelids. Gentle, weightless, and skin-safe &mdash; co-created with Eylure London for people experiencing chemotherapy, alopecia, or natural thinning.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#collection" class="btn btn-primary btn-pill">
+              <span>Shop The Collection</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="btn-icon"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#founder" class="btn btn-glass btn-pill">
+              <svg viewBox="0 0 24 24" fill="currentColor" class="play-mini-icon"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              <span>Watch Codilia's Story</span>
+            </a>
+          </div>
+
+          <!-- Micro Clinical Trust List -->
+          <div class="hero-trust-list">
+            <div class="hero-trust-item">
+              <span class="check-icon">&check;</span>
+              <span>No natural lashes needed</span>
+            </div>
+            <div class="hero-trust-item">
+              <span class="check-icon">&check;</span>
+              <span>Dermatologically tested</span>
+            </div>
+            <div class="hero-trust-item">
+              <span class="check-icon">&check;</span>
+              <span>Latex-free sensitive glue included</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: 3D Interactive Card Showcase -->
+        <div class="hero-visual-col">
+          <div class="hero-3d-scene">
+            <div class="hero-card-3d tilt-card" id="hero-tilt-card" data-tilt data-tilt-max="12" data-tilt-perspective="1200">
+              
+              <!-- Dynamic Specular Glare Overlay -->
+              <div class="card-glare" id="hero-card-glare"></div>
+
+              <!-- Main Packaging Artwork -->
+              <div class="hero-image-wrap">
+                <img 
+                  src="images/clash-naturals.jpg" 
+                  alt="Eylure C-Lash Naturals packaging by Codilia Gapare with Allure Best of Beauty Award seal" 
+                  class="hero-product-img" 
+                  id="hero-main-product-img" 
+                  loading="eager"
+                />
+              </div>
+
+              <!-- Floating Glowing Pill 1 (Top Left) -->
+              <div class="floating-pill pill-allure" data-parallax-speed="0.08">
+                <span class="pill-star">&starf;</span>
+                <span>Allure Best of Beauty Winner</span>
+              </div>
+
+              <!-- Floating Glowing Pill 2 (Bottom Right) -->
+              <div class="floating-pill pill-derma" data-parallax-speed="0.12">
+                <span class="pill-check">&check;</span>
+                <span>Dermatologist &amp; Chemo Safe</span>
+              </div>
+
+              <!-- Interactive Style Selector Under Hero -->
+              <div class="hero-style-switch" aria-label="Hero product preview switch">
+                <button class="hero-chip-btn active" data-style-hero="naturals">Naturals</button>
+                <button class="hero-chip-btn" data-style-hero="lengthening">Lengthening</button>
+                <button class="hero-chip-btn" data-style-hero="volume">Volume</button>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Trust Bar: Media & Clinical Credentials -->
+      <div class="trust-bar">
+        <div class="trust-bar-inner">
+          <p class="trust-bar-label">FEATURED &amp; CELEBRATED ACROSS</p>
+          <div class="press-logos-row">
+            <span class="press-logo bbc">BBC NEWS</span>
+            <span class="press-logo sunday-times">THE SUNDAY TIMES <em>STYLE</em></span>
+            <span class="press-logo metro">METRO</span>
+            <span class="press-logo prima">PRIMA</span>
+            <span class="press-logo huffpost">HUFFPOST</span>
+            <span class="press-logo itv">ITV THIS MORNING</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The Core Innovation (Interactive 3-Card 3D Deck) -->
+    <section class="section innovation-section" id="innovation">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-tag">ENGINEERED FOR SENSITIVE LIDS</span>
+          <h2 class="section-title">The Silicone Innovation That Changed Everything</h2>
+          <p class="section-subtitle">
+            Traditional false lashes require healthy natural lash hairs and heavy glue. C-Lash reinvents the band from the skin up.
+          </p>
+        </div>
+
+        <div class="innovation-deck">
+          
+          <!-- Card 1 -->
+          <div class="innovation-card tilt-card" data-tilt data-tilt-max="8">
+            <div class="card-glare"></div>
+            <div class="inno-icon-box inno-sage">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="inno-svg"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <span class="inno-step">01 &bull; SELF-SUPPORTING</span>
+            <h3 class="inno-title">Self-Supporting Band</h3>
+            <p class="inno-text">
+              The patented curved edge gives the lash an intrinsic base that stays upright on bare eyelids, preventing the drooping or flipping common with standard strip lashes.
+            </p>
+            <div class="inno-footer">
+              <span class="inno-metric">&check; Adheres flat to hairless skin</span>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="innovation-card tilt-card highlighted-deck-card" data-tilt data-tilt-max="8">
+            <div class="card-glare"></div>
+            <div class="deck-badge">PATENTED FORMULA</div>
+            <div class="inno-icon-box inno-gold">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="inno-svg"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+            </div>
+            <span class="inno-step">02 &bull; MEDICAL GRADE</span>
+            <h3 class="inno-title">Featherlight Silicone</h3>
+            <p class="inno-text">
+              Soft, flexible, hypoallergenic silicone contours to eye movement. Zero stiff sharp edges and zero tugging on delicate, healing eyelid tissue.
+            </p>
+            <div class="inno-footer">
+              <span class="inno-metric">&check; 100% skin-safe &amp; hypoallergenic</span>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="innovation-card tilt-card" data-tilt data-tilt-max="8">
+            <div class="card-glare"></div>
+            <div class="inno-icon-box inno-blush">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="inno-svg"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"></path><path d="M2 12h20"></path></svg>
+            </div>
+            <span class="inno-step">03 &bull; HYPER-NATURAL</span>
+            <h3 class="inno-title">All-Day Natural Blend</h3>
+            <p class="inno-text">
+              The translucent band disappears against every skin tone. Wispy, tapered synthetic fibres mimic natural eyelash growth for soft, dignified daily wear.
+            </p>
+            <div class="inno-footer">
+              <span class="inno-metric">&check; Undetectable clear finish</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Collection (3D Card Grid with Mobile Carousel) -->
+    <section class="section collection-section" id="collection">
+      <div class="container">
+        
+        <div class="collection-header-row">
+          <div class="section-heading text-left">
+            <span class="section-tag">THE RECOVERY COLLECTION</span>
+            <h2 class="section-title">Designed for Your Lash Journey</h2>
+            <p class="section-subtitle">
+              Choose from soft daytime flutter, gentle elongation, or value care packs. Every box includes latex-free sensitive adhesive.
+            </p>
+          </div>
+
+          <!-- Interactive Filter Tabs -->
+          <div class="filter-pills-bar" role="tablist" aria-label="Lash Style Categories">
+            <button class="filter-pill active" role="tab" aria-selected="true" data-filter="all">All Styles</button>
+            <button class="filter-pill" role="tab" aria-selected="false" data-filter="natural">Natural</button>
+            <button class="filter-pill" role="tab" aria-selected="false" data-filter="lengthening">Lengthening</button>
+            <button class="filter-pill" role="tab" aria-selected="false" data-filter="volume">Volume</button>
+            <button class="filter-pill" role="tab" aria-selected="false" data-filter="multipack">Multipack</button>
+          </div>
+        </div>
+
+        <!-- Mobile Scroll Indicator Hint -->
+        <div class="mobile-swipe-hint">
+          <span>&larr; Swipe to explore styles &rarr;</span>
+        </div>
+
+        <!-- 3D Card Grid / Mobile Horizontal Snap Slider -->
+        <div class="products-snap-track" id="products-track">
+          <!-- Dynamically populated by script.js with 3D tilt cards -->
+        </div>
+
+        <!-- Free Delivery Reassurance Banner -->
+        <div class="shipping-reassurance-card">
+          <div class="reassurance-col">
+            <span class="reassurance-icon">&boxbox;</span>
+            <div>
+              <strong>Free UK Royal Mail Delivery</strong>
+              <p>On all orders over &pound;25 &bull; Same-day dispatch before 2pm</p>
+            </div>
+          </div>
+          <div class="reassurance-col">
+            <span class="reassurance-icon">&check;</span>
+            <div>
+              <strong>100% Latex-Free &amp; Cruelty-Free</strong>
+              <p>Formulated without harsh glues or animal mink</p>
+            </div>
+          </div>
+          <div class="reassurance-col">
+            <span class="reassurance-icon">&starf;</span>
+            <div>
+              <strong>Reusable Up to 5 Times</strong>
+              <p>Gently clean with warm water and store in protective case</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Video & Community Reel Showcase ("Real Stories & Tutorials") -->
+    <section class="section reels-section" id="reels">
+      <div class="container">
+        
+        <div class="section-heading text-center">
+          <span class="section-tag">REAL COMMUNITY STORIES</span>
+          <h2 class="section-title">See C-Lash in Action</h2>
+          <p class="section-subtitle">
+            Watch real application tutorials, patient transformations, and founder insights directly from our Instagram community.
+          </p>
+        </div>
+
+        <!-- Snap-Scroll Carousel for Mobile & 4-Column Deck for Desktop -->
+        <div class="reels-grid">
+          
+          <!-- Reel 1 -->
+          <a href="https://www.instagram.com/reels/DYaVVxKNWf0/" target="_blank" rel="noopener noreferrer" class="reel-card" aria-label="Watch reel: How to apply C-Lash with sensitive lids">
+            <div class="reel-aspect">
+              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=720&q=80" alt="Application tutorial on sensitive eyelids" class="reel-bg" loading="lazy" />
+              <div class="reel-gradient"></div>
+              
+              <div class="reel-play-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="play-svg"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </div>
+
+              <div class="reel-meta">
+                <span class="reel-duration">0:45 &bull; Tutorial</span>
+                <h3 class="reel-title">How to apply C-Lash on bare, sensitive eyelids without glue mess</h3>
+                <span class="reel-action">Watch on Instagram &rarr;</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Reel 2 -->
+          <a href="https://www.instagram.com/reels/DRtyH9jDf1W/" target="_blank" rel="noopener noreferrer" class="reel-card" aria-label="Watch reel: Codilia on innovation and survivorship">
+            <div class="reel-aspect">
+              <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=720&q=80" alt="Codilia Gapare discussing breast cancer journey and lash invention" class="reel-bg" loading="lazy" />
+              <div class="reel-gradient"></div>
+
+              <div class="reel-play-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="play-svg"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </div>
+
+              <div class="reel-meta">
+                <span class="reel-duration">1:12 &bull; Founder Story</span>
+                <h3 class="reel-title">Codilia Gapare on inventing C-Lash during chemotherapy</h3>
+                <span class="reel-action">Watch on Instagram &rarr;</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Reel 3 -->
+          <a href="https://www.instagram.com/reels/DQ6OY7tDbU-/" target="_blank" rel="noopener noreferrer" class="reel-card" aria-label="Watch reel: Customer transformation & review">
+            <div class="reel-aspect">
+              <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=720&q=80" alt="Customer transformation review with C-Lash" class="reel-bg" loading="lazy" />
+              <div class="reel-gradient"></div>
+
+              <div class="reel-play-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="play-svg"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </div>
+
+              <div class="reel-meta">
+                <span class="reel-duration">0:58 &bull; Transformation</span>
+                <h3 class="reel-title">"I cried when I saw my reflection": Real customer experience</h3>
+                <span class="reel-action">Watch on Instagram &rarr;</span>
+              </div>
+            </div>
+          </a>
+
+          <!-- Reel 4 -->
+          <a href="https://www.instagram.com/reels/DPeQrAWiadp/" target="_blank" rel="noopener noreferrer" class="reel-card" aria-label="Watch reel: Lash comparison Naturals vs Wispy">
+            <div class="reel-aspect">
+              <img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?auto=format&fit=crop&w=720&q=80" alt="Comparison between Naturals and Wispy lash styles" class="reel-bg" loading="lazy" />
+              <div class="reel-gradient"></div>
+
+              <div class="reel-play-btn">
+                <svg viewBox="0 0 24 24" fill="currentColor" class="play-svg"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </div>
+
+              <div class="reel-meta">
+                <span class="reel-duration">0:48 &bull; Comparison</span>
+                <h3 class="reel-title">Style Guide: Naturals vs Wispy &mdash; Which one is right for you?</h3>
+                <span class="reel-action">Watch on Instagram &rarr;</span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+
+        <!-- Prominent Instagram Follow Action -->
+        <div class="reels-cta text-center">
+          <a href="https://www.instagram.com/c.lashbycody/" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-pill">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="btn-icon"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            <span>Follow @c.lashbycody on Instagram</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Founder Spotlight (Codilia's True Story) -->
+    <section class="section founder-section" id="founder">
+      <div class="container">
+        <div class="founder-card glass-panel">
+          <div class="founder-grid">
+            
+            <div class="founder-visual">
+              <div class="founder-img-wrapper">
+                <img 
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80" 
+                  alt="Codilia Gapare, cancer survivor and award-winning inventor of C-Lash" 
+                  class="founder-img" 
+                  loading="lazy"
+                />
+                <div class="founder-badge-pill">
+                  <span>BBC &bull; Sunday Times Style Award Winner</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="founder-story">
+              <span class="section-tag">FOUNDER &amp; INVENTOR SPOTLIGHT</span>
+              <h2 class="founder-name">Codilia Gapare</h2>
+              <p class="founder-role">Breast Cancer Survivor &bull; C-Lash Patent Holder</p>
+
+              <blockquote class="founder-quote">
+                &ldquo;I created C-Lash for people just like me. Losing lashes made me lose my expression. Getting them back made me feel like myself.&rdquo;
+              </blockquote>
+
+              <p class="founder-body">
+                When Codilia was diagnosed with breast cancer, she prepared for hair loss. But losing her eyelashes proved emotionally devastating: it took away the natural frame of her face and her facial expressions.
+              </p>
+              <p class="founder-body">
+                Traditional false eyelashes pinched her hypersensitive, hair-free eyelids and required natural eyelashes to anchor onto. Unwilling to accept that, Codilia prototyped a medical silicone edge that contours independently to bare skin.
+              </p>
+              <p class="founder-body">
+                Partnering with false lash giant <strong>Eylure London</strong>, C-Lash has now helped tens of thousands of women worldwide regain their dignity, expression, and joy.
+              </p>
+
+              <div class="founder-actions">
+                <a href="#collection" class="btn btn-primary btn-pill">Shop Her Collection</a>
+                <a href="https://www.instagram.com/reels/DRtyH9jDf1W/" target="_blank" rel="noopener noreferrer" class="btn btn-glass btn-pill">
+                  Watch BBC Interview &rarr;
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive FAQ & Sensitivity Guide -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-tag">MEDICAL &amp; APPLICATION GUIDANCE</span>
+          <h2 class="section-title">Everything You Need to Know</h2>
+          <p class="section-subtitle">
+            Expert guidance for hyper-sensitive skin, active oncology treatment, and gentle care.
+          </p>
+        </div>
+
+        <div class="faq-container">
+          
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How does C-Lash stay on without natural eyelashes?</span>
+              <span class="faq-icon">&plus;</span>
             </button>
-            <div class="video-caption-bar">
-              <span class="caption-speaker" id="video-speaker-tag">CODILIA GAPARE &bull; BBC FEATURE</span>
-              <p class="caption-text" id="video-caption-text">"I created C-Lash because getting your lashes back isn't vanity — it's restoring your dignity and feeling like yourself again."</p>
+            <div class="faq-answer">
+              <p>
+                C-Lash features Codilia Gapare's patented flexible silicone edge that provides a stable, wide-contact base adhering directly to the skin of your eyelid. Unlike traditional lashes that must sit on top of your existing lash hairs, C-Lash is specifically designed to adhere to hairless skin.
+              </p>
             </div>
           </div>
-          <div class="video-bottom-controls">
-            <button class="video-btn-play" id="video-btn-play" aria-label="Play/Pause">▶</button>
-            <div class="video-seek-bar">
-              <div class="video-seek-fill" id="video-seek-fill"></div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can I wear C-Lash during active chemotherapy?</span>
+              <span class="faq-icon">&plus;</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes! Thousands of patients have worn C-Lash during chemotherapy. The silicone band is flexible, soft, and inert. However, because skin sensitivity varies, we always advise doing a small 24-hour patch test with the glue on your inner arm or jawline, and consulting with your oncology nurse or dermatologist.
+              </p>
             </div>
-            <span class="video-time" id="video-time-display">0:14 / 2:10</span>
-            <button class="video-sound-toggle" id="video-sound-toggle" aria-label="Mute or Unmute">🔊</button>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Is the included adhesive safe for hyper-sensitive eyes?</span>
+              <span class="faq-icon">&plus;</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes. Every pack includes a gentle, latex-free, and hypoallergenic mini adhesive formulated specifically for sensitive eyelid skin. It holds securely throughout the day and releases effortlessly without tugging or residue.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Are C-Lash pairs reusable?</span>
+              <span class="faq-icon">&plus;</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes, each pair can typically be reused up to 5 times with proper care. After removing, gently peel off any leftover adhesive from the silicone strip using your fingertips or tweezers, wipe clean with a warm damp cotton pad, and store in the original tray to retain the ergonomic curve.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How do I trim C-Lash if my eyes are smaller?</span>
+              <span class="faq-icon">&plus;</span>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Hold the lash against your eyelid before applying glue to check the fit. If trimming is required, always cut from the outer edge in small increments between lash clusters. Or, choose our <em>Petite Lash Replacement</em> which is pre-proportioned for smaller eyes straight out of the box!
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Luxury Footer & Social Hub -->
+  <footer class="site-footer">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <!-- Brand Info -->
+        <div class="footer-col footer-brand-col">
+          <span class="footer-wordmark">C-LASH <span class="brand-cursive">by Codilia</span></span>
+          <p class="footer-desc">
+            In collaborative partnership with Eylure London. Restoring facial expression, warmth, and self-confidence for women facing eyelash loss.
+          </p>
+          <div class="footer-social-icons">
+            <a href="https://www.instagram.com/c.lashbycody/" target="_blank" rel="noopener noreferrer" class="footer-icon-link" aria-label="Follow C-Lash on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="footer-svg"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <a href="https://www.facebook.com/c.lashbycody" target="_blank" rel="noopener noreferrer" class="footer-icon-link" aria-label="Follow C-Lash on Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="footer-svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <a href="https://twitter.com/c_lashbycody" target="_blank" rel="noopener noreferrer" class="footer-icon-link" aria-label="Follow C-Lash on X (Twitter)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="footer-svg"><path d="M4 4l11.733 16h4.267l-11.733 -16z"></path><path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path></svg>
+            </a>
+            <a href="https://www.linkedin.com/company/c-lash/" target="_blank" rel="noopener noreferrer" class="footer-icon-link" aria-label="Connect with C-Lash on LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="footer-svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+            </a>
           </div>
         </div>
-        <div class="video-info-strip">
-          <h3 id="video-modal-title" class="video-info-title">Codilia Gapare: The Story Behind C-Lash &amp; Eylure London</h3>
-          <p class="video-info-desc">Originally featured on BBC News &amp; Sunday Times Style. How a breast cancer diagnosis in 2014 inspired an international cosmetic breakthrough.</p>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Search Modal Overlay -->
-  <div class="modal-backdrop" id="search-backdrop" aria-hidden="true"></div>
-  <div class="search-modal" id="search-modal" role="dialog" aria-modal="true" aria-labelledby="search-modal-title" aria-hidden="true">
-    <div class="search-modal-inner">
-      <div class="search-header">
-        <h2 id="search-modal-title" class="sr-only">Search Products</h2>
-        <div class="search-input-wrapper">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-input-icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          <input type="text" id="search-input" placeholder="Search by style (e.g. Naturale, Lengthening, Sensitive, Multipack)..." autocomplete="off">
-          <button class="search-clear-btn" id="search-clear-btn" aria-label="Clear search input">&times;</button>
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Collection</h4>
+          <ul class="footer-links">
+            <li><a href="#collection" data-filter="natural">Naturals Lash</a></li>
+            <li><a href="#collection" data-filter="lengthening">Lengthening Lash</a></li>
+            <li><a href="#collection" data-filter="volume">Soft Volume Lash</a></li>
+            <li><a href="#collection" data-filter="multipack">Value Multipacks</a></li>
+            <li><a href="#collection" data-filter="natural">Petite Contour</a></li>
+          </ul>
         </div>
-        <button class="modal-close-btn" id="search-modal-close" aria-label="Close search dialog">&times;</button>
-      </div>
-      <div class="search-results-container" id="search-results-container">
-        <div class="search-initial-prompts">
-          <span class="prompt-label">Popular Searches:</span>
-          <button class="search-tag-chip" data-search-term="Naturale">Naturale No. 101</button>
-          <button class="search-tag-chip" data-search-term="Lengthening">Lengthening</button>
-          <button class="search-tag-chip" data-search-term="Multipack">Triple Pack</button>
-          <button class="search-tag-chip" data-search-term="Sensitive">Sensitive Skin Safe</button>
+
+        <!-- Community & Care -->
+        <div class="footer-col">
+          <h4 class="footer-heading">Support &amp; Advice</h4>
+          <ul class="footer-links">
+            <li><a href="#innovation">How Silicone Band Works</a></li>
+            <li><a href="#founder">Codilia's True Story</a></li>
+            <li><a href="#reels">Application Video Reels</a></li>
+            <li><a href="#faq">Chemotherapy &amp; Alopecia FAQ</a></li>
+            <li><a href="https://www.instagram.com/c.lashbycody/" target="_blank" rel="noopener noreferrer">Instagram Care Community</a></li>
+          </ul>
         </div>
-        <div class="search-results-list" id="search-results-list"></div>
-      </div>
-    </div>
-  </div>
 
-  <!-- Wishlist Modal -->
-  <div class="modal-backdrop" id="wishlist-backdrop" aria-hidden="true"></div>
-  <div class="wishlist-modal" id="wishlist-modal" role="dialog" aria-modal="true" aria-labelledby="wishlist-modal-title" aria-hidden="true">
-    <div class="wishlist-modal-inner">
-      <div class="wishlist-modal-header">
-        <h3 id="wishlist-modal-title">Saved Favourites (<span id="wishlist-modal-count">0</span>)</h3>
-        <button class="modal-close-btn" id="wishlist-modal-close" aria-label="Close wishlist dialog">&times;</button>
-      </div>
-      <div class="wishlist-items-container" id="wishlist-items-container">
-        <!-- Rendered via JS -->
-      </div>
-    </div>
-  </div>
+        <!-- Newsletter & Discount -->
+        <div class="footer-col footer-news-col">
+          <h4 class="footer-heading">Join The C-Lash Circle</h4>
+          <p class="footer-news-text">
+            Receive sensitive care guides, founder updates from Codilia, and <strong>10% off</strong> your first order.
+          </p>
+          <form class="footer-form" id="newsletter-form">
+            <div class="footer-input-wrap">
+              <input type="email" placeholder="Enter your email address" required class="footer-input" aria-label="Email address for newsletter" />
+              <button type="submit" class="btn btn-primary footer-submit-btn">Subscribe</button>
+            </div>
+            <p class="footer-disclaimer">Zero spam. Free advice. Unsubscribe anytime.</p>
+          </form>
+        </div>
 
-  <!-- Lash Matchmaker Quiz Modal -->
-  <div class="modal-backdrop" id="quiz-backdrop" aria-hidden="true"></div>
-  <div class="quiz-modal" id="quiz-modal" role="dialog" aria-modal="true" aria-labelledby="quiz-modal-title" aria-hidden="true">
-    <button class="modal-close-btn" id="quiz-modal-close" aria-label="Close quiz dialog">&times;</button>
-    <div class="quiz-modal-inner">
-      <div class="quiz-progress-wrapper">
-        <div class="quiz-header-badge">✦ BESPOKE EYE CONSULTATION</div>
-        <div class="quiz-step-indicator">Step <span id="quiz-current-step">1</span> of 3</div>
-        <div class="quiz-progress-track">
-          <div class="quiz-progress-bar" id="quiz-progress-bar" style="width: 33%"></div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="copyright">&copy; 2026 C-Lash by Codilia Gapare &times; Eylure London. All rights reserved.</p>
+        <div class="footer-badges">
+          <span class="badge-item">PETA Cruelty-Free</span>
+          <span class="badge-item">Latex-Free Adhesive</span>
+          <span class="badge-item">Dermatologist Tested</span>
         </div>
       </div>
 
-      <div class="quiz-card-body" id="quiz-card-body">
-        <!-- Rendered by script.js -->
-      </div>
     </div>
-  </div>
+  </footer>
 
-  <!-- Mobile Bottom Action Bar (<= 768px) -->
-  <nav class="mobile-bottom-bar" aria-label="Mobile quick actions">
-    <a href="#" class="bottom-bar-item" id="bb-home" aria-label="Home">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="bb-icon"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-      <span>Home</span>
-    </a>
-    <a href="#collection" class="bottom-bar-item" id="bb-shop" aria-label="Shop catalog">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="bb-icon"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line></svg>
+  <!-- Mobile Sticky Thumb-Friendly Bottom Action Bar (<= 768px) -->
+  <nav class="mobile-bottom-dock" aria-label="Mobile Quick Dock">
+    <a href="#collection" class="bottom-dock-btn" aria-label="Shop catalog">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="dock-icon"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line></svg>
       <span>Shop</span>
     </a>
-    <button class="bottom-bar-item quiz-open-trigger" id="bb-quiz" aria-label="Lash Matchmaker Quiz">
-      <div class="bb-quiz-icon-wrapper">
-        <span class="bb-sparkle">✦</span>
-      </div>
-      <span>Find Lash</span>
-    </button>
-    <button class="bottom-bar-item wishlist-trigger" id="bb-wishlist" aria-label="Saved lashes">
-      <div class="bb-icon-wrapper">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="bb-icon"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
-        <span class="bb-badge" id="bb-wishlist-badge">0</span>
+    <a href="#reels" class="bottom-dock-btn" aria-label="Watch reels">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="dock-icon"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+      <span>Reels</span>
+    </a>
+    <button class="bottom-dock-btn" id="dock-wishlist-trigger" aria-label="Saved lashes">
+      <div class="dock-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="dock-icon"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+        <span class="dock-badge" id="dock-wishlist-count">0</span>
       </div>
       <span>Saved</span>
     </button>
-    <button class="bottom-bar-item cart-trigger" id="bb-cart" aria-label="Shopping Bag">
-      <div class="bb-icon-wrapper">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="bb-icon"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
-        <span class="bb-badge" id="bb-cart-badge">0</span>
+    <button class="bottom-dock-btn dock-cart-highlight" id="dock-cart-trigger" aria-label="Shopping bag">
+      <div class="dock-icon-wrap">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="dock-icon"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+        <span class="dock-badge" id="dock-cart-count">0</span>
       </div>
       <span>Bag</span>
     </button>
   </nav>
 
-  <!-- Write a Review Modal -->
-  <div class="modal-backdrop" id="review-backdrop" aria-hidden="true"></div>
-  <div class="review-modal" id="review-modal" role="dialog" aria-modal="true" aria-labelledby="review-modal-title" aria-hidden="true">
-    <button class="modal-close-btn" id="review-modal-close" aria-label="Close review dialog">&times;</button>
-    <div class="review-modal-inner">
-      <div class="review-modal-header">
-        <span class="section-tag">COMMUNITY VOICES</span>
-        <h3 id="review-modal-title" class="review-modal-title">Share Your C-Lash Journey</h3>
-        <p class="review-modal-sub">Your words bring reassurance, guidance, and courage to someone going through medical hair loss today.</p>
+  <!-- Slide-out Shopping Bag Drawer -->
+  <div class="cart-backdrop" id="cart-backdrop" aria-hidden="true"></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" role="dialog" aria-label="Shopping Bag">
+    <div class="cart-drawer-header">
+      <div class="cart-drawer-title-row">
+        <h3 class="cart-drawer-heading">Your Shopping Bag</h3>
+        <span class="cart-items-total" id="cart-drawer-items-count">(0 items)</span>
       </div>
+      <button class="icon-btn cart-close-btn" id="cart-close" aria-label="Close shopping bag">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="nav-icon"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
 
-      <form class="review-form" id="review-form">
-        <div class="form-row">
-          <div class="form-field">
-            <label for="review-author">Your Name</label>
-            <input type="text" id="review-author" placeholder="e.g. Rachel K." required autocomplete="name">
-          </div>
-          <div class="form-field">
-            <label for="review-condition">Lash Journey / Condition</label>
-            <select id="review-condition" required>
-              <option value="chemo">Chemotherapy Treatment</option>
-              <option value="alopecia">Alopecia / Trichotillomania</option>
-              <option value="sensitive">Sensitive Eyelids / Thinning</option>
-              <option value="other">First-Time Lash Wearer</option>
-            </select>
-          </div>
-        </div>
+    <!-- Free Delivery Progress Meter -->
+    <div class="free-shipping-bar">
+      <div class="shipping-msg" id="shipping-msg">
+        Add <strong>&pound;25.00</strong> more to unlock <strong>Free UK Delivery</strong>!
+      </div>
+      <div class="shipping-progress-track">
+        <div class="shipping-progress-fill" id="shipping-fill" style="width: 0%;"></div>
+      </div>
+    </div>
 
-        <div class="form-row">
-          <div class="form-field">
-            <label for="review-product">C-Lash Style Worn</label>
-            <select id="review-product" required>
-              <option value="C-Lash Naturale No. 101">C-Lash Naturale No. 101</option>
-              <option value="C-Lash Lengthening No. 110">C-Lash Lengthening No. 110</option>
-              <option value="C-Lash Soft Volume No. 120">C-Lash Soft Volume No. 120</option>
-              <option value="C-Lash Petite Contour No. 105">C-Lash Petite Contour No. 105</option>
-              <option value="C-Lash Triple Recovery Multipack">Triple Recovery Multipack</option>
-            </select>
-          </div>
-          <div class="form-field">
-            <label>Your Rating</label>
-            <div class="rating-star-selector" id="rating-star-selector">
-              <button type="button" class="star-pick active" data-star="1" aria-label="1 star">★</button>
-              <button type="button" class="star-pick active" data-star="2" aria-label="2 stars">★</button>
-              <button type="button" class="star-pick active" data-star="3" aria-label="3 stars">★</button>
-              <button type="button" class="star-pick active" data-star="4" aria-label="4 stars">★</button>
-              <button type="button" class="star-pick active" data-star="5" aria-label="5 stars">★</button>
-            </div>
-          </div>
-        </div>
+    <!-- Cart Items Scrollable List -->
+    <div class="cart-items-list" id="cart-items-container">
+      <!-- Injected by script.js -->
+    </div>
 
-        <div class="form-field">
-          <label for="review-headline">Review Headline</label>
-          <input type="text" id="review-headline" placeholder="e.g. Finally felt like myself in the mirror!" required>
-        </div>
+    <!-- Cart Footer & Subtotal -->
+    <div class="cart-drawer-footer" id="cart-drawer-footer">
+      <div class="cart-subtotal-row">
+        <span>Subtotal</span>
+        <span class="cart-subtotal-value" id="cart-subtotal">&pound;0.00</span>
+      </div>
+      <p class="cart-tax-notice">Taxes and UK delivery calculated at checkout.</p>
 
-        <div class="form-field">
-          <label for="review-body">Your Story &amp; Experience</label>
-          <textarea id="review-body" rows="4" placeholder="How did C-Lash feel on your eyelids? Did it stay in place? How did it help your confidence?" required></textarea>
-        </div>
+      <button class="btn btn-primary btn-full checkout-btn" id="checkout-btn">
+        <span>Proceed to Secure Checkout</span>
+        <span class="checkout-arrow">&rarr;</span>
+      </button>
 
-        <button type="submit" class="btn btn-primary review-submit-btn" id="review-submit-btn">
-          <span>Publish My Review</span>
-          <svg viewBox="0 0 20 20" fill="currentColor" class="btn-arrow" aria-hidden="true"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" /></svg>
-        </button>
-      </form>
+      <div class="cart-reassure-row">
+        <span>&check; 30-Day Sensitivity Guarantee</span>
+        <span>&bull;</span>
+        <span>Royal Mail Tracked</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Quick View Modal -->
+  <div class="modal-backdrop" id="quick-view-backdrop" aria-hidden="true"></div>
+  <div class="quick-view-modal" id="quick-view-modal" aria-hidden="true" role="dialog" aria-label="Product quick view">
+    <button class="icon-btn modal-close-btn" id="quick-view-close" aria-label="Close modal">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="nav-icon"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+    </button>
+    <div class="quick-view-content" id="quick-view-content">
+      <!-- Dynamically filled by script.js -->
     </div>
   </div>
 
-  <!-- Toast Notification Container -->
-  <div class="toast-container" id="toast-container" aria-live="polite" aria-atomic="true"></div>
+  <!-- Live Search Modal -->
+  <div class="modal-backdrop" id="search-backdrop" aria-hidden="true"></div>
+  <div class="search-modal" id="search-modal" aria-hidden="true" role="dialog" aria-label="Search lash collection">
+    <div class="search-modal-header">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="search-input-icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <input type="search" placeholder="Search Naturals, Lengthening, Volume..." class="search-input" id="search-input" autocomplete="off" />
+      <button class="icon-btn search-close-btn" id="search-close" aria-label="Close search">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="nav-icon"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <div class="search-results-list" id="search-results">
+      <!-- Injected by script.js -->
+    </div>
+  </div>
 
+  <!-- Wishlist Drawer / Modal -->
+  <div class="modal-backdrop" id="wishlist-backdrop" aria-hidden="true"></div>
+  <aside class="wishlist-drawer" id="wishlist-drawer" aria-hidden="true" role="dialog" aria-label="Your Saved Lashes">
+    <div class="cart-drawer-header">
+      <h3 class="cart-drawer-heading">Your Saved Lashes</h3>
+      <button class="icon-btn" id="wishlist-close" aria-label="Close favourites">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="nav-icon"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <div class="wishlist-items-body" id="wishlist-items-container">
+      <!-- Injected by script.js -->
+    </div>
+  </aside>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-stack" id="toast-stack" aria-live="polite"></div>
+
+  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
-
