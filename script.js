@@ -35,11 +35,11 @@ document.addEventListener('DOMContentLoaded', () => {
       shortDesc: "Created specifically for lash replacement with a soft, flexible & invisible band that aids application. Designed by cancer survivor Codilia Gapare.",
       fullDesc: "Engineered specifically for complete eyelash loss. Features Codilia Gapare's patented flexible silicone edge that provides a stable, wide-contact base adhering directly to bare eyelid skin. Soft, wispy fibres create the illusion of natural flutter and warmth.",
       images: {
-        primary: "images/clash-naturals.png",
-        secondary: "images/clash-naturals.png",
+        primary: "images/clash-naturals.jpg",
+        secondary: "images/clash-naturals.jpg",
         gallery: [
-          "images/clash-naturals.png",
-          "images/clash-catalog-all.png"
+          "images/clash-naturals.jpg",
+          "images/clash-catalog-all.jpg"
         ]
       }
     },
@@ -57,11 +57,11 @@ document.addEventListener('DOMContentLoaded', () => {
       shortDesc: "Finely tapered tips with subtle graduated length towards the outer corners to visually open and brighten tired or sensitive eyes.",
       fullDesc: "Designed to provide an uplifting, wide-awake effect without weighing down tender lids. The flexible curved silicone strip stays upright on bare skin all day long with zero drooping or flipping.",
       images: {
-        primary: "images/clash-lengthening.png",
-        secondary: "images/clash-lengthening.png",
+        primary: "images/clash-lengthening.jpg",
+        secondary: "images/clash-lengthening.jpg",
         gallery: [
-          "images/clash-lengthening.png",
-          "images/clash-catalog-all.png"
+          "images/clash-lengthening.jpg",
+          "images/clash-catalog-all.jpg"
         ]
       }
     },
@@ -79,11 +79,11 @@ document.addEventListener('DOMContentLoaded', () => {
       shortDesc: "Multi-layered softness for when you want a touch of evening glamour without heavy clumps or eyelid fatigue.",
       fullDesc: "Features clustered wisps of ultra-soft synthetic hair anchored into a clear, flexible medical silicone strip. Delivers touchable density and soft definition that flatters every eye shape.",
       images: {
-        primary: "images/clash-volume.png",
-        secondary: "images/clash-volume.png",
+        primary: "images/clash-volume.jpg",
+        secondary: "images/clash-volume.jpg",
         gallery: [
-          "images/clash-volume.png",
-          "images/clash-catalog-all.png"
+          "images/clash-volume.jpg",
+          "images/clash-catalog-all.jpg"
         ]
       }
     },
@@ -101,11 +101,11 @@ document.addEventListener('DOMContentLoaded', () => {
       shortDesc: "Specially proportioned for smaller eyelids, hooded eyes, or anyone who prefers a shorter band width straight out of the box.",
       fullDesc: "Eliminates the fuss of scissors! Pre-tailored with a shorter silicone strip and gentle lash length so you can apply instantly. Hugs delicate eyelids with comfortable ease.",
       images: {
-        primary: "images/clash-petite.png",
-        secondary: "images/clash-petite.png",
+        primary: "images/clash-petite.jpg",
+        secondary: "images/clash-petite.jpg",
         gallery: [
-          "images/clash-petite.png",
-          "images/clash-catalog-all.png"
+          "images/clash-petite.jpg",
+          "images/clash-catalog-all.jpg"
         ]
       }
     },
@@ -123,11 +123,11 @@ document.addEventListener('DOMContentLoaded', () => {
       shortDesc: "Delicate cat-eye wing effect with longer outer clusters to elongate your eye shape gracefully.",
       fullDesc: "Provides a gentle, dignified lift. The patented curved silicone strip retains its ergonomic memory through multiple wears and washes, gently adapting to natural eye movement.",
       images: {
-        primary: "images/clash-wispy.png",
-        secondary: "images/clash-wispy.png",
+        primary: "images/clash-wispy.jpg",
+        secondary: "images/clash-wispy.jpg",
         gallery: [
-          "images/clash-wispy.png",
-          "images/clash-catalog-all.png"
+          "images/clash-wispy.jpg",
+          "images/clash-catalog-all.jpg"
         ]
       }
     },
@@ -146,11 +146,11 @@ document.addEventListener('DOMContentLoaded', () => {
       shortDesc: "Complete oncology & alopecia care bundle. Contains 3 pairs of Naturals lashes with flexible invisible bands and gentle latex-free adhesive.",
       fullDesc: "Our most beloved gift set and medical treatment companion. Everything you need from daily natural elegance to special evening dinners. Packaged in a soft-touch luxury keepsake box with an application mirror.",
       images: {
-        primary: "images/clash-multipack.png",
-        secondary: "images/clash-multipack.png",
+        primary: "images/clash-multipack.jpg",
+        secondary: "images/clash-multipack.jpg",
         gallery: [
-          "images/clash-multipack.png",
-          "images/clash-catalog-all.png"
+          "images/clash-multipack.jpg",
+          "images/clash-catalog-all.jpg"
         ]
       }
     }
@@ -228,14 +228,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const grid = document.getElementById('products-grid');
     if (!grid) return;
 
-    const filtered = category === 'all'
-      ? products
+    const filtered = category === 'all' 
+      ? products 
       : products.filter(p => p.category === category);
 
     grid.innerHTML = filtered.map(product => {
       const isWishlisted = state.wishlist.has(product.id);
       const wasPriceFormatted = product.wasPriceGBP ? formatPrice(product.wasPriceGBP) : null;
-
+      
       return `
         <article class="product-card" data-id="${product.id}" data-category="${product.category}">
           <div class="product-card-visual">
@@ -256,14 +256,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
             <img 
               src="${product.images.primary}" 
-              alt="${product.name} gentle false eyelash on white cosmetic background" 
-              class="product-img img-primary" 
-              loading="lazy"
-            />
-            <img 
-              src="${product.images.secondary}" 
-              alt="${product.name} packaging and delicate lash curve preview" 
-              class="product-img img-secondary" 
+              alt="${product.name} gentle false eyelash packaging" 
+              class="product-img" 
               loading="lazy"
             />
 
@@ -315,7 +309,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.addEventListener('click', (e) => {
         const id = parseInt(e.currentTarget.getAttribute('data-id'), 10);
         addToCart(id);
-
+        
         // Button state feedback
         const originalText = btn.innerHTML;
         btn.innerHTML = `✓ Added`;
@@ -555,7 +549,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Grand total
     const grandTotalGBP = Math.max(0, (subtotalGBP - discountGBP) + standardShippingGBP);
-
+    
     document.getElementById('cart-subtotal').textContent = formatPrice(subtotalGBP);
     document.getElementById('cart-grand-total').textContent = formatPrice(grandTotalGBP);
 
@@ -665,13 +659,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const category = tab.getAttribute('data-category');
       state.activeFilter = category;
-
+      
       const grid = document.getElementById('products-grid');
       if (grid) {
         grid.style.opacity = '0';
         grid.style.transform = 'translateY(10px)';
         grid.style.transition = 'all 0.25s ease';
-
+        
         setTimeout(() => {
           renderProducts(category);
           grid.style.opacity = '1';
@@ -945,7 +939,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const term = e.target.value.toLowerCase().trim();
     if (term.length > 0) {
       searchClearBtn.style.display = 'block';
-      const matches = products.filter(p =>
+      const matches = products.filter(p => 
         p.name.toLowerCase().includes(term) ||
         p.styleNum.toLowerCase().includes(term) ||
         p.category.toLowerCase().includes(term) ||
@@ -1238,14 +1232,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const setSplitPosition = (percent) => {
     const clamped = Math.max(0, Math.min(100, percent));
-    if (baSlider) {
-      baSlider.style.setProperty('--ba-split', `${clamped}%`);
-    }
-    if (baBeforeLayer) {
-      baBeforeLayer.style.clipPath = `inset(0 ${100 - clamped}% 0 0)`;
-      baBeforeLayer.style.webkitClipPath = `inset(0 ${100 - clamped}% 0 0)`;
-      baBeforeLayer.style.width = '100%';
-    }
+    if (baBeforeLayer) baBeforeLayer.style.width = `${clamped}%`;
     if (baHandle) {
       baHandle.style.left = `${clamped}%`;
       baHandle.setAttribute('aria-valuenow', Math.round(clamped));
@@ -1547,19 +1534,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const heroStyleData = {
     naturale: {
-      img: "images/clash-naturals.png",
+      img: "images/clash-naturals.jpg",
       title: "Eylure C-Lash Naturals",
       quote: "“I cried when I looked in the mirror. My face felt complete again.”",
       author: "— Rachel K., Oncology Patient"
     },
     lengthening: {
-      img: "images/clash-lengthening.png",
+      img: "images/clash-lengthening.jpg",
       title: "Eylure C-Lash Lengthening",
       quote: "“The delicate lift visually opened my eyes without pulling on my lids.”",
       author: "— Amanda P., Alopecia UK Member"
     },
     volume: {
-      img: "images/clash-volume.png",
+      img: "images/clash-volume.jpg",
       title: "Eylure C-Lash Volume",
       quote: "“Gave me gorgeous dimension for my daughter's wedding. Zero irritation.”",
       author: "— Helen S., Breast Cancer Survivor"
