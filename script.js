@@ -19,144 +19,138 @@ document.addEventListener('DOMContentLoaded', () => {
     freeShippingThresholdGBP: 25.00
   };
 
-  // --- Product Catalog Data ---
+  // --- Product Catalog Data (Authentic Eylure C-Lash Collection) ---
   const products = [
     {
       id: 1,
-      styleNum: "NO. 101",
-      name: "C-Lash Naturale",
+      styleNum: "NATURALS &bull; NO. 101",
+      name: "Eylure C-Lash Naturals",
       category: "natural",
       priceGBP: 5.25,
       rating: 4.9,
       reviewsCount: 482,
-      badge: "Bestseller",
+      badge: "Allure Award Winner",
       badgeType: "bestseller",
-      specs: ["Invisible Silicone Strip", "Ultra-Lightweight", "Up to 10 Wears"],
-      shortDesc: "Our flagship gentle lash. Delicately criss-crossed synthetic fibres tailored specifically to restore natural eyelid definition without looking artificial.",
+      specs: ["Invisible Silicone Strip", "Ultra-Lightweight", "Glue Included"],
+      shortDesc: "Created specifically for lash replacement with a soft, flexible & invisible band that aids application. Designed by cancer survivor Codilia Gapare.",
       fullDesc: "Engineered specifically for complete eyelash loss. Features Codilia Gapare's patented flexible silicone edge that provides a stable, wide-contact base adhering directly to bare eyelid skin. Soft, wispy fibres create the illusion of natural flutter and warmth.",
       images: {
-        primary: "https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=700&q=80",
-        secondary: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&q=80",
+        primary: "images/clash-naturals.png",
+        secondary: "images/clash-naturals.png",
         gallery: [
-          "https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=700&q=80",
-          "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&q=80",
-          "https://images.unsplash.com/photo-1583001809873-a128495da465?auto=format&fit=crop&w=700&q=80"
+          "images/clash-naturals.png",
+          "images/clash-catalog-all.png"
         ]
       }
     },
     {
       id: 2,
-      styleNum: "NO. 110",
-      name: "C-Lash Lengthening",
+      styleNum: "LENGTHENING &bull; NO. 110",
+      name: "Eylure C-Lash Lengthening",
       category: "lengthening",
       priceGBP: 5.25,
       rating: 4.9,
       reviewsCount: 319,
-      badge: "Sensitive Safe",
+      badge: "Allure Award Winner",
       badgeType: "sensitive",
       specs: ["Tapered Outer Tips", "Eye-Opening Lift", "Skin-Safe Silicone"],
       shortDesc: "Finely tapered tips with subtle graduated length towards the outer corners to visually open and brighten tired or sensitive eyes.",
       fullDesc: "Designed to provide an uplifting, wide-awake effect without weighing down tender lids. The flexible curved silicone strip stays upright on bare skin all day long with zero drooping or flipping.",
       images: {
-        primary: "https://images.unsplash.com/photo-1583001809873-a128495da465?auto=format&fit=crop&w=700&q=80",
-        secondary: "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=700&q=80",
+        primary: "images/clash-lengthening.png",
+        secondary: "images/clash-lengthening.png",
         gallery: [
-          "https://images.unsplash.com/photo-1583001809873-a128495da465?auto=format&fit=crop&w=700&q=80",
-          "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=700&q=80",
-          "https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=700&q=80"
+          "images/clash-lengthening.png",
+          "images/clash-catalog-all.png"
         ]
       }
     },
     {
       id: 3,
-      styleNum: "NO. 120",
-      name: "C-Lash Soft Volume",
+      styleNum: "VOLUME &bull; NO. 120",
+      name: "Eylure C-Lash Volume",
       category: "volume",
-      priceGBP: 5.45,
+      priceGBP: 5.25,
       rating: 4.8,
       reviewsCount: 245,
-      badge: "Evening Favorite",
+      badge: "Allure Award Winner",
       badgeType: "bestseller",
       specs: ["Soft Dimensional Depth", "Weightless Fibres", "Hypoallergenic"],
       shortDesc: "Multi-layered softness for when you want a touch of evening glamour without heavy clumps or eyelid fatigue.",
       fullDesc: "Features clustered wisps of ultra-soft synthetic hair anchored into a clear, flexible medical silicone strip. Delivers touchable density and soft definition that flatters every eye shape.",
       images: {
-        primary: "https://images.unsplash.com/photo-1587754256282-a11d04e3472d?auto=format&fit=crop&w=700&q=80",
-        secondary: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=700&q=80",
+        primary: "images/clash-volume.png",
+        secondary: "images/clash-volume.png",
         gallery: [
-          "https://images.unsplash.com/photo-1587754256282-a11d04e3472d?auto=format&fit=crop&w=700&q=80",
-          "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=700&q=80",
-          "https://images.unsplash.com/photo-1583001809873-a128495da465?auto=format&fit=crop&w=700&q=80"
+          "images/clash-volume.png",
+          "images/clash-catalog-all.png"
         ]
       }
     },
     {
       id: 4,
-      styleNum: "NO. 105",
-      name: "C-Lash Petite Contour",
+      styleNum: "PETITE &bull; NO. 105",
+      name: "Eylure C-Lash Petite",
       category: "natural",
       priceGBP: 5.25,
       rating: 4.9,
       reviewsCount: 178,
-      badge: "Petite Eyes",
+      badge: "Allure Award Winner",
       badgeType: "sensitive",
       specs: ["Shorter Band Width", "Subtle Daytime Density", "No Trimming Needed"],
       shortDesc: "Specially proportioned for smaller eyelids, hooded eyes, or anyone who prefers a shorter band width straight out of the box.",
       fullDesc: "Eliminates the fuss of scissors! Pre-tailored with a shorter silicone strip and gentle lash length so you can apply instantly. Hugs delicate eyelids with comfortable ease.",
       images: {
-        primary: "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&w=700&q=80",
-        secondary: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&q=80",
+        primary: "images/clash-petite.png",
+        secondary: "images/clash-petite.png",
         gallery: [
-          "https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&w=700&q=80",
-          "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=700&q=80",
-          "https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&fit=crop&w=700&q=80"
+          "images/clash-petite.png",
+          "images/clash-catalog-all.png"
         ]
       }
     },
     {
       id: 5,
-      styleNum: "NO. 115",
-      name: "C-Lash Wispy Flare",
+      styleNum: "WISPY &bull; NO. 115",
+      name: "Eylure C-Lash Wispy",
       category: "lengthening",
-      priceGBP: 5.45,
+      priceGBP: 5.25,
       rating: 4.8,
       reviewsCount: 124,
-      badge: "Subtle Lift",
+      badge: "Allure Award Winner",
       badgeType: "sensitive",
       specs: ["Winged Outer Lift", "Featherweight", "Silicone Curve Memory"],
       shortDesc: "Delicate cat-eye wing effect with longer outer clusters to elongate your eye shape gracefully.",
       fullDesc: "Provides a gentle, dignified lift. The patented curved silicone strip retains its ergonomic memory through multiple wears and washes, gently adapting to natural eye movement.",
       images: {
-        primary: "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=700&q=80",
-        secondary: "https://images.unsplash.com/photo-1583001809873-a128495da465?auto=format&fit=crop&w=700&q=80",
+        primary: "images/clash-wispy.png",
+        secondary: "images/clash-wispy.png",
         gallery: [
-          "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=700&q=80",
-          "https://images.unsplash.com/photo-1583001809873-a128495da465?auto=format&fit=crop&w=700&q=80",
-          "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?auto=format&fit=crop&w=700&q=80"
+          "images/clash-wispy.png",
+          "images/clash-catalog-all.png"
         ]
       }
     },
     {
       id: 6,
-      styleNum: "SET &bull; 3-PACK",
-      name: "C-Lash Triple Recovery Multipack",
+      styleNum: "MULTIPACK &bull; 3-PACK",
+      name: "Eylure C-Lash Naturals Multipack",
       category: "multipack",
-      priceGBP: 14.45,
+      priceGBP: 15.95,
       wasPriceGBP: 18.00,
       rating: 5.0,
       reviewsCount: 620,
-      badge: "Save 20%",
+      badge: "Value 3-Pack",
       badgeType: "save",
-      specs: ["3 Full Lash Pairs", "Full-Size Sensitive Glue", "Lash Applicator Wand"],
-      shortDesc: "Complete oncology & alopecia care bundle. Includes Naturale No.101, Lengthening No.110, Soft Volume No.120, plus gentle latex-free adhesive.",
+      specs: ["3 Full Lash Pairs", "Full-Size Sensitive Glue", "Lash Replacement"],
+      shortDesc: "Complete oncology & alopecia care bundle. Contains 3 pairs of Naturals lashes with flexible invisible bands and gentle latex-free adhesive.",
       fullDesc: "Our most beloved gift set and medical treatment companion. Everything you need from daily natural elegance to special evening dinners. Packaged in a soft-touch luxury keepsake box with an application mirror.",
       images: {
-        primary: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=80",
-        secondary: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=700&q=80",
+        primary: "images/clash-multipack.png",
+        secondary: "images/clash-multipack.png",
         gallery: [
-          "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=80",
-          "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=700&q=80",
-          "https://images.unsplash.com/photo-1583001809873-a128495da465?auto=format&fit=crop&w=700&q=80"
+          "images/clash-multipack.png",
+          "images/clash-catalog-all.png"
         ]
       }
     }
@@ -234,14 +228,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const grid = document.getElementById('products-grid');
     if (!grid) return;
 
-    const filtered = category === 'all' 
-      ? products 
+    const filtered = category === 'all'
+      ? products
       : products.filter(p => p.category === category);
 
     grid.innerHTML = filtered.map(product => {
       const isWishlisted = state.wishlist.has(product.id);
       const wasPriceFormatted = product.wasPriceGBP ? formatPrice(product.wasPriceGBP) : null;
-      
+
       return `
         <article class="product-card" data-id="${product.id}" data-category="${product.category}">
           <div class="product-card-visual">
@@ -321,7 +315,7 @@ document.addEventListener('DOMContentLoaded', () => {
       btn.addEventListener('click', (e) => {
         const id = parseInt(e.currentTarget.getAttribute('data-id'), 10);
         addToCart(id);
-        
+
         // Button state feedback
         const originalText = btn.innerHTML;
         btn.innerHTML = `✓ Added`;
@@ -561,7 +555,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Grand total
     const grandTotalGBP = Math.max(0, (subtotalGBP - discountGBP) + standardShippingGBP);
-    
+
     document.getElementById('cart-subtotal').textContent = formatPrice(subtotalGBP);
     document.getElementById('cart-grand-total').textContent = formatPrice(grandTotalGBP);
 
@@ -671,13 +665,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
       const category = tab.getAttribute('data-category');
       state.activeFilter = category;
-      
+
       const grid = document.getElementById('products-grid');
       if (grid) {
         grid.style.opacity = '0';
         grid.style.transform = 'translateY(10px)';
         grid.style.transition = 'all 0.25s ease';
-        
+
         setTimeout(() => {
           renderProducts(category);
           grid.style.opacity = '1';
@@ -951,7 +945,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const term = e.target.value.toLowerCase().trim();
     if (term.length > 0) {
       searchClearBtn.style.display = 'block';
-      const matches = products.filter(p => 
+      const matches = products.filter(p =>
         p.name.toLowerCase().includes(term) ||
         p.styleNum.toLowerCase().includes(term) ||
         p.category.toLowerCase().includes(term) ||
@@ -1244,7 +1238,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const setSplitPosition = (percent) => {
     const clamped = Math.max(0, Math.min(100, percent));
-    if (baBeforeLayer) baBeforeLayer.style.width = `${clamped}%`;
+    if (baSlider) {
+      baSlider.style.setProperty('--ba-split', `${clamped}%`);
+    }
+    if (baBeforeLayer) {
+      baBeforeLayer.style.clipPath = `inset(0 ${100 - clamped}% 0 0)`;
+      baBeforeLayer.style.webkitClipPath = `inset(0 ${100 - clamped}% 0 0)`;
+      baBeforeLayer.style.width = '100%';
+    }
     if (baHandle) {
       baHandle.style.left = `${clamped}%`;
       baHandle.setAttribute('aria-valuenow', Math.round(clamped));
@@ -1539,6 +1540,283 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // --- Hero Interactive Lash Style Switcher ---
+  const heroDynamicImg = document.getElementById('hero-dynamic-img');
+  const heroSwitchBtns = document.querySelectorAll('.hero-switch-btn');
+  const heroMiniProduct = document.querySelector('.hero-mini-product');
+
+  const heroStyleData = {
+    naturale: {
+      img: "images/clash-naturals.png",
+      title: "Eylure C-Lash Naturals",
+      quote: "“I cried when I looked in the mirror. My face felt complete again.”",
+      author: "— Rachel K., Oncology Patient"
+    },
+    lengthening: {
+      img: "images/clash-lengthening.png",
+      title: "Eylure C-Lash Lengthening",
+      quote: "“The delicate lift visually opened my eyes without pulling on my lids.”",
+      author: "— Amanda P., Alopecia UK Member"
+    },
+    volume: {
+      img: "images/clash-volume.png",
+      title: "Eylure C-Lash Volume",
+      quote: "“Gave me gorgeous dimension for my daughter's wedding. Zero irritation.”",
+      author: "— Helen S., Breast Cancer Survivor"
+    }
+  };
+
+  heroSwitchBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      heroSwitchBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const style = btn.getAttribute('data-style');
+      const data = heroStyleData[style];
+      if (!data) return;
+
+      if (heroDynamicImg) {
+        heroDynamicImg.style.opacity = '0.3';
+        heroDynamicImg.style.transition = 'opacity 0.2s ease';
+        setTimeout(() => {
+          heroDynamicImg.src = data.img;
+          heroDynamicImg.style.opacity = '1';
+        }, 180);
+      }
+
+      if (heroMiniProduct) {
+        heroMiniProduct.querySelector('.mini-title').textContent = data.title;
+        heroMiniProduct.querySelector('.mini-quote').textContent = data.quote;
+        heroMiniProduct.querySelector('.mini-author').textContent = data.author;
+      }
+    });
+  });
+
+  // --- Verified Patient Reviews Data & Filter ---
+  const patientReviews = [
+    {
+      id: 1,
+      author: "Rachel K.",
+      category: "chemo",
+      conditionLabel: "Chemo Patient",
+      conditionClass: "chemo",
+      rating: 5,
+      comfortScore: "10/10 Gentle",
+      title: "I cried tears of relief looking in the mirror",
+      body: "Losing my lashes during breast cancer treatments made me lose my identity. Normal false lashes tore at my bare skin and wouldn’t stay flat. C-Lash stayed put for 12 straight hours at a family christening. I felt like myself again.",
+      style: "C-Lash Naturale No. 101",
+      date: "3 days ago"
+    },
+    {
+      id: 2,
+      author: "Amanda P.",
+      category: "alopecia",
+      conditionLabel: "Alopecia Totalis",
+      conditionClass: "alopecia",
+      rating: 5,
+      comfortScore: "10/10 Gentle",
+      title: "Finally, lashes that don’t flip or pull off in the wind",
+      body: "I've had Alopecia for 9 years and have tried every magnet, glue, and strap under the sun. The wider silicone skin band on C-Lash creates a flat vacuum-like seal on bare eyelid skin. It is truly life-changing.",
+      style: "C-Lash Lengthening No. 110",
+      date: "1 week ago"
+    },
+    {
+      id: 3,
+      author: "Yasmin B.",
+      category: "chemo",
+      conditionLabel: "Chemo Recovery",
+      conditionClass: "chemo",
+      rating: 5,
+      comfortScore: "10/10 Gentle",
+      title: "Protected my regrowing peach fuzz!",
+      body: "When my chemotherapy ended, fragile new hairs started sprouting. I was terrified traditional glue would rip them out. C-Lash peeled away in the evening with warm water without tugging a single follicle.",
+      style: "Triple Recovery Multipack",
+      date: "2 weeks ago"
+    },
+    {
+      id: 4,
+      author: "Dr. Fiona M.",
+      category: "chemo",
+      conditionLabel: "GP & Survivor",
+      conditionClass: "chemo",
+      rating: 5,
+      comfortScore: "9.9/10 Gentle",
+      title: "Clinically sound biocompatible design",
+      body: "As a General Practitioner who went through cancer myself, I inspect cosmetics with scrutiny. The hypoallergenic latex-free adhesive and biocompatible silicone strip minimize all risks of blepharitis or contact dermatitis.",
+      style: "C-Lash Naturale No. 101",
+      date: "3 weeks ago"
+    },
+    {
+      id: 5,
+      author: "Chloe D.",
+      category: "sensitive",
+      conditionLabel: "Sensitive Eyelids",
+      conditionClass: "sensitive",
+      rating: 5,
+      comfortScore: "10/10 Gentle",
+      title: "No more stinging or watery red eyes",
+      body: "I suffer from eyelid eczema and sensitive watery eyes. Every other lash glue burns. The gentle chamomile-infused C-Lash glue feels soothing and the flexible silicone band doesn't poke the inner corners at all.",
+      style: "C-Lash Petite Contour No. 105",
+      date: "1 month ago"
+    },
+    {
+      id: 6,
+      author: "Helen S.",
+      category: "alopecia",
+      conditionLabel: "Trichotillomania",
+      conditionClass: "alopecia",
+      rating: 5,
+      comfortScore: "10/10 Gentle",
+      title: "Soft glamorous volume without heavy weight",
+      body: "I wore the Soft Volume No. 120 for my daughter's wedding. It was lightweight, dignified, and gave my eyes the exact soft focus framing I had missed for years. Thank you Codilia for inventing this!",
+      style: "C-Lash Soft Volume No. 120",
+      date: "1 month ago"
+    }
+  ];
+
+  const renderReviews = (filterCategory = 'all') => {
+    const grid = document.getElementById('reviews-grid');
+    if (!grid) return;
+
+    const filtered = filterCategory === 'all'
+      ? patientReviews
+      : patientReviews.filter(r => r.category === filterCategory);
+
+    grid.innerHTML = filtered.map(rev => `
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-author-name">
+            <span>${rev.author}</span>
+            <svg viewBox="0 0 20 20" fill="currentColor" class="verified-icon" title="Verified Patient Buyer">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+          </div>
+          <span class="condition-pill ${rev.conditionClass}">${rev.conditionLabel}</span>
+        </div>
+
+        <div class="review-stars-row">
+          <span class="stars">${'★'.repeat(rev.rating)}</span>
+          <span class="review-comfort-tag">${rev.comfortScore}</span>
+        </div>
+
+        <h4 class="review-card-title">${rev.title}</h4>
+        <p class="review-card-body">“${rev.body}”</p>
+
+        <div class="review-card-footer">
+          <span class="review-style-tag">${rev.style}</span>
+          <span class="review-date">${rev.date}</span>
+        </div>
+      </div>
+    `).join('');
+  };
+
+  // Review Filter Tabs Click Listener
+  document.querySelectorAll('.review-filter-tab').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.review-filter-tab').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const cat = tab.getAttribute('data-filter');
+      const grid = document.getElementById('reviews-grid');
+      if (grid) {
+        grid.style.opacity = '0';
+        grid.style.transition = 'opacity 0.2s ease';
+        setTimeout(() => {
+          renderReviews(cat);
+          grid.style.opacity = '1';
+        }, 200);
+      }
+    });
+  });
+
+  // --- Write a Review Modal ---
+  const reviewModal = document.getElementById('review-modal');
+  const reviewBackdrop = document.getElementById('review-backdrop');
+  const reviewModalClose = document.getElementById('review-modal-close');
+  const openReviewModalBtn = document.getElementById('open-review-modal-btn');
+  const reviewForm = document.getElementById('review-form');
+  let selectedReviewStars = 5;
+
+  const openReviewModal = () => {
+    reviewModal?.classList.add('open');
+    reviewBackdrop?.classList.add('open');
+    reviewModal?.setAttribute('aria-hidden', 'false');
+    reviewBackdrop?.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  };
+
+  const closeReviewModal = () => {
+    reviewModal?.classList.remove('open');
+    reviewBackdrop?.classList.remove('open');
+    reviewModal?.setAttribute('aria-hidden', 'true');
+    reviewBackdrop?.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+  };
+
+  openReviewModalBtn?.addEventListener('click', openReviewModal);
+  reviewModalClose?.addEventListener('click', closeReviewModal);
+  reviewBackdrop?.addEventListener('click', closeReviewModal);
+
+  // Interactive Star Selector inside Review Modal
+  const starButtons = document.querySelectorAll('.star-pick');
+  starButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const starVal = parseInt(btn.getAttribute('data-star'), 10);
+      selectedReviewStars = starVal;
+      starButtons.forEach(s => {
+        const val = parseInt(s.getAttribute('data-star'), 10);
+        s.classList.toggle('active', val <= starVal);
+      });
+    });
+  });
+
+  // Review Form Submit Handler
+  reviewForm?.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const author = document.getElementById('review-author')?.value.trim() || 'Community Member';
+    const condition = document.getElementById('review-condition')?.value || 'chemo';
+    const conditionText = document.getElementById('review-condition')?.selectedOptions[0]?.text || 'Patient';
+    const product = document.getElementById('review-product')?.value || 'C-Lash Naturale No. 101';
+    const headline = document.getElementById('review-headline')?.value.trim() || 'Restored my expression!';
+    const body = document.getElementById('review-body')?.value.trim() || 'Gentle and stays in place all day.';
+
+    // Prepend to reviews list
+    patientReviews.unshift({
+      id: Date.now(),
+      author: author,
+      category: condition,
+      conditionLabel: conditionText.split(' ')[0] + ' Journey',
+      conditionClass: condition === 'chemo' ? 'chemo' : condition === 'alopecia' ? 'alopecia' : 'sensitive',
+      rating: selectedReviewStars,
+      comfortScore: "10/10 Gentle",
+      title: headline,
+      body: body,
+      style: product,
+      date: "Just now"
+    });
+
+    renderReviews('all');
+    closeReviewModal();
+    showToast('Thank you! Your verified patient review has been published.', '✨');
+    reviewForm.reset();
+  });
+
+  // --- Same-Day Dispatch Countdown Timer ---
+  const initDispatchCountdown = () => {
+    const el = document.getElementById('dispatch-countdown');
+    if (!el) return;
+
+    // Simulate countdown to 3:00 PM Royal Mail cutoff
+    let remainingMinutes = 134; // 2h 14m
+    setInterval(() => {
+      if (remainingMinutes > 0) {
+        remainingMinutes -= 1;
+        const hrs = Math.floor(remainingMinutes / 60);
+        const mins = remainingMinutes % 60;
+        el.textContent = `${hrs}h ${mins < 10 ? '0' : ''}${mins}m`;
+      }
+    }, 60000);
+  };
+
   // --- Keyboard Accessibility: ESC closes all modals/drawers ---
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
@@ -1548,12 +1826,15 @@ document.addEventListener('DOMContentLoaded', () => {
       closeSearch();
       closeWishlist();
       closeQuizModal();
+      closeReviewModal();
     }
   });
 
   // --- Initial Render ---
   updateCurrencyDisplays();
   renderProducts('all');
+  renderReviews('all');
+  initDispatchCountdown();
   updateCartUI();
   updateWishlistUI();
 });
