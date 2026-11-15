@@ -633,12 +633,15 @@
         <!-- Editorial Image Box -->
         <div class="story-visual">
           <div class="story-image-frame">
-            <img 
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80" 
-              alt="Codilia Gapare, founder and inventor of C-Lash"
-              class="story-founder-img"
-              loading="lazy"
-            />
+            <picture>
+              <source srcset="images/founder.jpg" type="image/jpeg">
+              <img 
+                src="images/founder.png" 
+                alt="Codilia Gapare, founder and inventor of C-Lash"
+                class="story-founder-img"
+                loading="lazy"
+              />
+            </picture>
             <div class="story-badge-card">
               <span class="story-badge-year">2014 &ndash; Today</span>
               <span class="story-badge-title">British-Zimbabwean Entrepreneur &amp; Cancer Survivor</span>
@@ -697,108 +700,168 @@
           </p>
         </div>
 
-        <!-- 4 Reel / Video Cards -->
+        <!-- 4 Reel / Video Cards Linking Directly to Instagram -->
         <div class="reels-grid">
-          <!-- Reel 1 -->
-          <div class="reel-card" data-video-id="reel-1">
+          <!-- Reel 1: BBC Radio Merseyside Interview -->
+          <a href="https://www.instagram.com/reels/DYaVVxKNWf0/" target="_blank" rel="noopener noreferrer" class="reel-card"
+            aria-label="Watch Reel on Instagram: Codilia Gapare on BBC Radio Merseyside discussing C-Lash">
             <div class="reel-thumbnail-wrapper">
-              <img 
-                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80" 
-                alt="Sarah wearing C-Lash Naturale post-chemotherapy"
-                class="reel-thumbnail"
-                loading="lazy"
-              />
+              <picture>
+                <source srcset="images/reel1.jpg" type="image/jpeg">
+                <img src="images/reel1.png" alt="Codilia Gapare at BBC Radio Merseyside studio discussing C-Lash" class="reel-thumbnail" loading="lazy" />
+              </picture>
               <div class="reel-overlay">
-                <button class="reel-play-btn" aria-label="Play video review by Sarah M.">
-                  <svg viewBox="0 0 24 24" fill="currentColor" class="reel-play-icon" aria-hidden="true">
+                <div class="reel-overlay-top">
+                  <span class="reel-badge">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="instagram-icon" aria-hidden="true">
+                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                    Reel
+                  </span>
+                  <span class="reel-duration-pill">1:15</span>
+                </div>
+                <div class="reel-play-btn" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor" class="reel-play-icon">
                     <polygon points="5 3 19 12 5 21 5 3"></polygon>
                   </svg>
-                </button>
-                <div class="reel-duration">0:48</div>
+                </div>
+                <div class="reel-external-cta">
+                  <span>Watch on Instagram</span>
+                  <svg class="external-arrow" viewBox="0 0 20 20" fill="currentColor" width="14" height="14"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/></svg>
+                </div>
               </div>
             </div>
             <div class="reel-info">
-              <span class="reel-tag">Chemo Journey</span>
-              <h4 class="reel-title">"First time feeling like me again after 6 cycles of AC chemo."</h4>
-              <p class="reel-author">Sarah M. &bull; London, UK</p>
+              <span class="reel-tag">BBC Radio Feature</span>
+              <h4 class="reel-title">"BBC Radio Merseyside: Codilia Gapare on creating C-Lash &amp; cancer advocacy."</h4>
+              <p class="reel-author">
+                <span>@c.lashbycody</span>
+                <svg viewBox="0 0 24 24" class="verified-icon" width="14" height="14" fill="#3897f0" aria-label="Verified"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                <span class="reel-media-label">&bull; BBC Merseyside</span>
+              </p>
             </div>
-          </div>
+          </a>
+        
+          <!-- Reel 2: Graduation Keynote Commencement -->
+          <a href="https://www.instagram.com/reels/DRtyH9jDf1W/" target="_blank" rel="noopener noreferrer" class="reel-card"
+            aria-label="Watch Reel on Instagram: Codilia Gapare keynote commencement speech">
+            <div class="reel-thumbnail-wrapper">
+              <picture>
+                <source srcset="images/reel2.jpg" type="image/jpeg">
+                <img src="images/reel2.png" alt="Codilia Gapare keynote commencement address at graduation" class="reel-thumbnail" loading="lazy" />
+              </picture>
+              <div class="reel-overlay">
+                <div class="reel-overlay-top">
+                  <span class="reel-badge">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="instagram-icon" aria-hidden="true">
+                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                    Reel
+                  </span>
+                  <span class="reel-duration-pill">2:04</span>
+                </div>
+                <div class="reel-play-btn" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor" class="reel-play-icon">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                </div>
+                <div class="reel-external-cta">
+                  <span>Watch on Instagram</span>
+                  <svg class="external-arrow" viewBox="0 0 20 20" fill="currentColor" width="14" height="14"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/></svg>
+                </div>
+              </div>
+            </div>
+            <div class="reel-info">
+              <span class="reel-tag">Keynote Address</span>
+              <h4 class="reel-title">"Inspiring the Next Generation: From cancer survivor to global beauty pioneer."</h4>
+              <p class="reel-author">
+                <span>Codilia Gapare</span>
+                <svg viewBox="0 0 24 24" class="verified-icon" width="14" height="14" fill="#3897f0" aria-label="Verified"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                <span class="reel-media-label">&bull; Keynote Commencement</span>
+              </p>
+            </div>
+          </a>
 
-          <!-- Reel 2 -->
-          <div class="reel-card" data-video-id="reel-2">
+          <!-- Reel 3: Founder Story & Application Masterclass -->
+          <a href="https://www.instagram.com/reels/DQ6OY7tDbU-/" target="_blank" rel="noopener noreferrer" class="reel-card"
+            aria-label="Watch Reel on Instagram: Codilia Gapare lash wear and tutorial">
             <div class="reel-thumbnail-wrapper">
-              <img 
-                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=600&q=80" 
-                alt="Nurse Emma demonstrating C-Lash application"
-                class="reel-thumbnail"
-                loading="lazy"
-              />
+              <picture>
+                <source srcset="images/reel3.jpg" type="image/jpeg">
+                <img src="images/reel3.png" alt="Codilia Gapare lash application and natural look masterclass" class="reel-thumbnail" loading="lazy" />
+              </picture>
               <div class="reel-overlay">
-                <button class="reel-play-btn" aria-label="Play application tutorial with Nurse Emma">
-                  <svg viewBox="0 0 24 24" fill="currentColor" class="reel-play-icon" aria-hidden="true">
+                <div class="reel-overlay-top">
+                  <span class="reel-badge">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="instagram-icon" aria-hidden="true">
+                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                    Reel
+                  </span>
+                  <span class="reel-duration-pill">0:52</span>
+                </div>
+                <div class="reel-play-btn" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor" class="reel-play-icon">
                     <polygon points="5 3 19 12 5 21 5 3"></polygon>
                   </svg>
-                </button>
-                <div class="reel-duration">1:12</div>
+                </div>
+                <div class="reel-external-cta">
+                  <span>Watch on Instagram</span>
+                  <svg class="external-arrow" viewBox="0 0 20 20" fill="currentColor" width="14" height="14"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/></svg>
+                </div>
               </div>
             </div>
             <div class="reel-info">
-              <span class="reel-tag">Nurse Tutorial</span>
-              <h4 class="reel-title">"Application guide with ZERO natural lashes: A step-by-step masterclass."</h4>
-              <p class="reel-author">Emma R., Oncology Aesthetics Nurse</p>
+              <span class="reel-tag">Founder Masterclass</span>
+              <h4 class="reel-title">"Everyday Confidence: How C-Lash feels, holds, and restores your natural look."</h4>
+              <p class="reel-author">
+                <span>@c.lashbycody</span>
+                <svg viewBox="0 0 24 24" class="verified-icon" width="14" height="14" fill="#3897f0" aria-label="Verified"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                <span class="reel-media-label">&bull; Masterclass</span>
+              </p>
             </div>
-          </div>
+          </a>
 
-          <!-- Reel 3 -->
-          <div class="reel-card" data-video-id="reel-3">
+          <!-- Reel 4: Empowered to Lead Conference -->
+          <a href="https://www.instagram.com/reels/DPeQrAWiadp/" target="_blank" rel="noopener noreferrer" class="reel-card"
+            aria-label="Watch Reel on Instagram: Codilia Gapare speaking at Empowered to Lead Conference">
             <div class="reel-thumbnail-wrapper">
-              <img 
-                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=80" 
-                alt="Kiran, Alopecia UK Ambassador reviewing C-Lash Lengthening"
-                class="reel-thumbnail"
-                loading="lazy"
-              />
+              <picture>
+                <source srcset="images/reel4.jpg" type="image/jpeg">
+                <img src="images/reel4.png" alt="Codilia Gapare keynote speaker at Empowered to Lead Conference Manchester" class="reel-thumbnail" loading="lazy" />
+              </picture>
               <div class="reel-overlay">
-                <button class="reel-play-btn" aria-label="Play video review by Kiran T.">
-                  <svg viewBox="0 0 24 24" fill="currentColor" class="reel-play-icon" aria-hidden="true">
+                <div class="reel-overlay-top">
+                  <span class="reel-badge">
+                    <svg viewBox="0 0 24 24" fill="currentColor" class="instagram-icon" aria-hidden="true">
+                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                    Reel
+                  </span>
+                  <span class="reel-duration-pill">1:28</span>
+                </div>
+                <div class="reel-play-btn" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor" class="reel-play-icon">
                     <polygon points="5 3 19 12 5 21 5 3"></polygon>
                   </svg>
-                </button>
-                <div class="reel-duration">0:55</div>
+                </div>
+                <div class="reel-external-cta">
+                  <span>Watch on Instagram</span>
+                  <svg class="external-arrow" viewBox="0 0 20 20" fill="currentColor" width="14" height="14"><path fill-rule="evenodd" d="M5.22 14.78a.75.75 0 001.06 0l7.22-7.22v5.69a.75.75 0 001.5 0v-7.5a.75.75 0 00-.75-.75h-7.5a.75.75 0 000 1.5h5.69l-7.22 7.22a.75.75 0 000 1.06z" clip-rule="evenodd"/></svg>
+                </div>
               </div>
             </div>
             <div class="reel-info">
-              <span class="reel-tag">Alopecia UK</span>
-              <h4 class="reel-title">"Living with Alopecia Totalis for 12 years. These are the ONLY lashes that stay put."</h4>
-              <p class="reel-author">Kiran T. &bull; Birmingham, UK</p>
+              <span class="reel-tag">Keynote Speaker</span>
+              <h4 class="reel-title">"Empowered to Lead: Redefining beauty, resilience and entrepreneurship."</h4>
+              <p class="reel-author">
+                <span>She Leads for Legacy</span>
+                <svg viewBox="0 0 24 24" class="verified-icon" width="14" height="14" fill="#3897f0" aria-label="Verified"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                <span class="reel-media-label">&bull; Manchester Central</span>
+              </p>
             </div>
-          </div>
-
-          <!-- Reel 4 -->
-          <div class="reel-card" data-video-id="reel-4">
-            <div class="reel-thumbnail-wrapper">
-              <img 
-                src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" 
-                alt="Dr Clara Dermatologist reviewing C-Lash silicone band safety"
-                class="reel-thumbnail"
-                loading="lazy"
-              />
-              <div class="reel-overlay">
-                <button class="reel-play-btn" aria-label="Play review by Dr Clara H.">
-                  <svg viewBox="0 0 24 24" fill="currentColor" class="reel-play-icon" aria-hidden="true">
-                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                  </svg>
-                </button>
-                <div class="reel-duration">1:04</div>
-              </div>
-            </div>
-            <div class="reel-info">
-              <span class="reel-tag">Medical Review</span>
-              <h4 class="reel-title">"Why the flexible medical silicone contact avoids eyelid dermatitis."</h4>
-              <p class="reel-author">Dr. Clara H. &bull; Cosmetic Dermatologist</p>
-            </div>
-          </div>
-        </div>
+          </a>
+</div>
 
         <div class="community-instagram-cta">
           <p>Join over 45,000 members sharing their everyday beauty moments</p>

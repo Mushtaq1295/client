@@ -162,36 +162,36 @@ document.addEventListener('DOMContentLoaded', () => {
       title: "Codilia Gapare: The Story Behind C-Lash & Eylure London",
       speaker: "CODILIA GAPARE &bull; BBC FEATURE",
       caption: "“I created C-Lash because losing lashes during breast cancer made me lose my expression. Getting them back wasn’t vanity — it made me feel like myself again.”",
-      bgImg: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=900&q=80",
-      desc: "Originally featured on BBC News & Sunday Times Style. How a breast cancer diagnosis in 2014 inspired an international cosmetic breakthrough."
+      bgImg: "images/reel1.jpg",
+      desc: "Originally featured on BBC News & Sunday Times Style. How a breast cancer diagnosis inspired an international cosmetic breakthrough."
     },
     "reel-1": {
-      title: "Sarah's Chemo Journey: Restoring My Confidence",
-      speaker: "SARAH M. &bull; POST-CHEMO PATIENT REVIEW",
-      caption: "“After cycle 4 my natural lashes were completely gone. Standard lashes slipped right into my eyes. C-Lash stayed on for my entire sister’s wedding!”",
-      bgImg: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=900&q=80",
-      desc: "Real patient testimony on how the flexible silicone band feels on sensitised post-chemotherapy skin."
+      title: "BBC Radio Merseyside: Codilia Gapare on creating C-Lash",
+      speaker: "CODILIA GAPARE &bull; BBC RADIO MERSEYSIDE",
+      caption: "“BBC Radio Merseyside in-depth interview with Codilia Gapare on entrepreneurship and breast cancer advocacy.”",
+      bgImg: "images/reel1.jpg",
+      desc: "Codilia Gapare shares the inspiration and medical design behind C-Lash in the BBC studio."
     },
     "reel-2": {
-      title: "Application Masterclass with Oncology Nurse Emma",
-      speaker: "NURSE EMMA R. &bull; AESTHETICS & ONCOLOGY SPECIALIST",
-      caption: "“The secret is the broader silicone contact plane. You don't need hair to anchor it. Just press gently against the lid and let the hypoallergenic bond set.”",
-      bgImg: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=900&q=80",
-      desc: "Clinical step-by-step guidance for patients and beauty enthusiasts applying false lashes to bare eyelids."
+      title: "Inspiring the Next Generation: Keynote Commencement Address",
+      speaker: "CODILIA GAPARE &bull; KEYNOTE COMMENCEMENT",
+      caption: "“From cancer survivor to global beauty pioneer — turning life challenges into a mission to restore dignity and self-esteem.”",
+      bgImg: "images/reel2.jpg",
+      desc: "Codilia Gapare delivering the university graduation commencement address in academic regalia."
     },
     "reel-3": {
-      title: "Living with Alopecia Totalis: The Only Lashes That Work",
-      speaker: "KIRAN T. &bull; ALOPECIA UK ADVOCATE",
-      caption: "“I've lived with Alopecia for 12 years. Magnetic lashes require glue or hair. C-Lash is the first product ever engineered with our exact anatomy in mind.”",
-      bgImg: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=80",
-      desc: "In-depth review exploring day-to-night longevity and pain-free removal for those with total hair loss."
+      title: "Everyday Confidence: Founder Lash Application Masterclass",
+      speaker: "CODILIA GAPARE &bull; FOUNDER MASTERCLASS",
+      caption: "“How C-Lash feels, holds, and seamlessly restores your natural expression — even without a single natural eyelash.”",
+      bgImg: "images/reel3.jpg",
+      desc: "Codilia Gapare sharing personal styling tips and close-up natural lash wear."
     },
     "reel-4": {
-      title: "Dermatologist Review: Skin-Safe Silicone Technology",
-      speaker: "DR. CLARA H. &bull; COSMETIC DERMATOLOGY ADVISOR",
-      caption: "“Traditional latex adhesives and cotton bands cause contact dermatitis on bare lids. C-Lash's medical-grade silicone prevents chemical irritation.”",
-      bgImg: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=900&q=80",
-      desc: "Medical explanation of biocompatible silicone band dynamics and gentle removal without follicular traction."
+      title: "Empowered to Lead Conference: She Leads for Legacy",
+      speaker: "SHE LEADS FOR LEGACY &bull; MANCHESTER CENTRAL",
+      caption: "“Keynote speaker at the Empowered to Lead Conference, discussing resilience, female leadership and inclusive beauty.”",
+      bgImg: "images/reel4.jpg",
+      desc: "Codilia Gapare addressing attendees at the Manchester Central conference."
     }
   };
 
@@ -1097,10 +1097,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Reel cards trigger
   document.querySelectorAll('.reel-card').forEach(card => {
-    card.addEventListener('click', () => {
-      const videoId = card.getAttribute('data-video-id');
-      openVideo(videoId);
-    });
+    // If the reel card has an external Instagram link, let it open Instagram in a new tab smoothly
+    const href = card.getAttribute('href');
+    if (!href || !href.includes('instagram.com')) {
+      card.addEventListener('click', (e) => {
+        const videoId = card.getAttribute('data-video-id');
+        if (videoId) {
+          e.preventDefault();
+          openVideo(videoId);
+        }
+      });
+    }
   });
 
   // --- Currency Selector ---
